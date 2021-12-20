@@ -1,41 +1,42 @@
 clear all;close all
 cd(fileparts(matlab.desktop.editor.getActiveFilename))
-%cd .. 
-%cd ..
-%UHEAL_startup
+cd .. 
+cd ..
+addpath('O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL')
+UHEAL_startup
 ft_defaults
 
-%cd('_EEG/_preprocdata_ABR')
+cd('_EEG/_preprocdata_ABR')
 % subject
-subdir = dir('*mat')
+subdir = dir('UH*')
 %CP = [1,1];
 %%
 rates = [9,40];
-for s=1:2%61:length(subdir)
+for s=21%:length(subdir)
     % Select preprocessed .mat file to process
     data_filt = [];
-    %cd(datadir);
-    %cd(subdir(s).name);
+    cd(datadir);
+    cd(subdir(s).name);
     %stim 
-    %stimname = dir('click_abr_stim_*');
-    %try
-    %   load(stimname.name);
-    %catch
-    %   load(stimname.name);
-    %end
-    stimear = 2%stim.ear;
-    % go to EEG folder
-    %cd(rootdir)
-    %cd('_EEG/_preprocdata_ABR')
-    %cd(subdir(s).name)
+    stimname = dir('click_abr_stim_*');
     try
-        load([subdir(s).name])%,'_ABR.mat'])
+       load(stimname.name);
     catch
-        load([subdir(s).name])%,'_ABR.mat'])
+       load(stimname.name);
+    end
+    stimear = stim.ear;
+    % go to EEG folder
+    cd(rootdir)
+    cd('_EEG/_preprocdata_ABR')
+    cd(subdir(s).name)
+    try
+        load([subdir(s).name,'_ABR.mat'])
+    catch
+        load([subdir(s).name,'_ABR.mat'])
     end
 
 
-    %cd(rootdir)
+    cd(rootdir)
     %labels = {(1:18)};{'lMast','rMast','Cz','Fz','Fp1','FCz','ltip','rtip'};
     %data.label = labels(1:size(data.trial{1},1));
     fs = data.fsample;
@@ -46,9 +47,9 @@ for s=1:2%61:length(subdir)
     
     %chan oi
     if stimear ==1
-        chans =17%[find(strcmp(data.label,'EXG1'))]; % right tiptrode
+        chans =[find(strcmp(data.label,'EXG1'))]; % right tiptrode
     else
-        chans =17%[find(strcmp(data.label,'EXG2'))];
+        chans =[find(strcmp(data.label,'EXG2'))];
     end
     
     ccc = 1:2;
@@ -153,7 +154,7 @@ for s=1:2%61:length(subdir)
     data_abr.stimear = stimear(1);
     
 
-    %cd('_EEG/_ABR_results')
+    cd('_EEG/_ABR_results')
     %cd(subdir(s).name)
     savefile = [subdir(s).name '_ABR_processed.mat'];
 
