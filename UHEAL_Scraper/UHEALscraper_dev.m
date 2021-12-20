@@ -81,25 +81,30 @@ errors = {}; %clues to things that went wrong will be stored here
 
 % %insert here where the data is stored (manual override)
 % datafol = 'C:\Users\sadaw\Documents\UHEAL\Data';
-datafol = 'O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL\UHEAL_data'
+%datafol = 'O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL\UHEAL_data'
+datafol_remote = '/Volumes/Department/Sund/Public/Hearing-Systems-group/cahr/Temporary_ftp/UHEAL/UHEAL_data'
 
 addpath(datafol);
-
+addpath(datafol_remote);
 root = cd;
-cont = dir(datafol);
+cont = dir(datafol_remote);
 cont = cont(~ismember({cont.name},{'.','..'}));
 
+
 sfol = cont([cont.isdir]); %isolate data folders
-cd(datafol)
 addpath(sfol.name)
 
 %make the output directory
+cd(datafol)
 outputfol = 'scraped';
 mkdir(outputfol)
+cd(outputfol)
+outputfol = fullfile(cd);
 
 fprintf('Found %d subject/session folders.\n',size(sfol,1))
 
-for i = [18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
+for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
+    cd(datafol_remote)
     cd(sfol(i).name)%enter each folder
     fprintf('Entered folder: %s \n',sfol(i).name)
     

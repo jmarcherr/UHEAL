@@ -1,3 +1,4 @@
+cd(fileparts(matlab.desktop.editor.getActiveFilename))
 clear
 datadir = [cd filesep 'UHEAL_data'];
 addpath([cd '/UHEAL_Scraper'])
