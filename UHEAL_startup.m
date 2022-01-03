@@ -11,9 +11,11 @@ end
 
 fprintf('\n project directory now added to the current path \n')
 
+addpath('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master')
 if ~exist(fileparts(which('ft_defaults.m')))
     fprintf('remember to add fieldtrip to you path! \n')
 end
+
 
 
 addpath(fullfile('_EEG/'))
