@@ -1,7 +1,9 @@
 clear all
-ft_defaults
+
 %addpath('O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL')
+cd('/work1/jonmarc/UHEAL_master/UHEAL')
 UHEAL_startup
+ft_defaults
 
 %cd(bdfdir)
 cd(datadir)
@@ -10,7 +12,7 @@ numsub = length(d);
 %d = dir('*.bdf');
 tic
 %% ------------Import data ----------------------------------------
-for dd=22%:setdiff(2:numsub,[21])
+for dd=2:10%1:10%setdiff(2:numsub,[21])
 
 cd(datadir)
 cd(d(dd).name)
@@ -27,7 +29,7 @@ stimear = stim.ear(1);
 
 %% ------------Event extraction --------------------------------------
 
-triggers = [50,60]; % 9.1/s, 9.1/s+noise, 40/s
+triggers = [50,62]; % 9.1/s, 9.1/s+noise, 40/s
 
 hdr = ft_read_header(dataset);
 cfg=[];

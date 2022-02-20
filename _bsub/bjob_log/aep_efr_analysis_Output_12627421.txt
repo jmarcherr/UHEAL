@@ -1,0 +1,32 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+ project directory now added to the current path 
+
+ directory addded to the path
+subdir = 
+
+  105x1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum
+
+Starting parallel pool (parpool) using the 'dcc' profile ...
+
+additionalSubmitArgs =
+
+    '-n 20 -q hpc -R "span[ptile=20]" -W 20:00 -R "rusage[mem=8GB]"'
+
+Connected to the parallel pool (number of workers: 20).

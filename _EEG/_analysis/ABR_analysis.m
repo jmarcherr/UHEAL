@@ -1,12 +1,9 @@
 clear all;close all
-cd(fileparts(matlab.desktop.editor.getActiveFilename))
-cd .. 
-cd ..
-addpath('O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL')
+addpath('/work1/jonmarc/UHEAL_master/UHEAL')
 UHEAL_startup
 ft_defaults
-
-cd('_EEG/_preprocdata_ABR')
+eeg_dir = '/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_preprocdata_ABR';
+cd(eeg_dir)
 % subject
 subdir = dir('UH*')
 %CP = [1,1];

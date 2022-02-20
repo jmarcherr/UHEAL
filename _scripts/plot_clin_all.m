@@ -1,6 +1,7 @@
 %% plot audiogram
 
 close all
+clear all
 cd(fileparts(matlab.desktop.editor.getActiveFilename))
 cd ..
 %addpath('O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL')
@@ -37,12 +38,20 @@ for s=1:length(d)
     %load(['UH' num2str(subid(s))])
     
     load([d(s).name]);
+            sub_id{s} = d(s).name;
     if ~isempty(dataalm.aud)
         %get audiogram and age
         [age,aud_L,aud_R,aud_freq,gender] = get_aud(dataalm);
-        
+        age = dataalm.subinfo.age;
+        gender = dataalm.subinfo.gender;
+        CP = dataalm.subinfo.CP;
+
         %get stim ear
-        stimear = dataalm.stim.abr.ear(1);
+        if strcmp(dataalm.id,'UH099')
+            stimear = 1;
+        else
+            stimear = dataalm.stim.ffr.ear(1);
+        end
         %plot stim ear
         if stimear ==1 %left ear
             
@@ -59,10 +68,11 @@ for s=1:length(d)
         
         age_sub(s) = age; %log age
         gender_sub(s) = gender;
-        
+        CP_sub(s) = CP;
     else
         age_sub(s) = nan;
         gender_sub(s) = nan;
+        CP_sub(s) = nan;
     end
     clc
     disp(['Subject ' num2str(s) ' processed.'])
@@ -80,22 +90,47 @@ cb.Label.FontName = 'Arial';
 colormap(cmap)
 
 set(gcf,'position',[305 412 432 299]);
-%% age correction and gender (missing audiometry)
-age_sub(22)= 23; age_sub(33) = 19;
-gender_sub(22) = 1; gender_sub(33) = 1;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% age plot
-figure(2)
+%% group audiogram plots
+close all
+idx = find(~isnan(age_sub));
+fig = plot_audiogram_groups(idx,age_sub,aud,aud_freq,cmap)
+% save figure
+title(['all, n=' num2str(length(idx))])
+saveas(fig,'figs/audiogram_all','epsc')
+%% only NH
+close all
+NH_idx = find(CP_sub==0);
+fig = plot_audiogram_groups(NH_idx,age_sub,aud,aud_freq,cmap)
+% save figure
+title(['NH, n=' num2str(length(NH_idx))])
+saveas(fig,'figs/audiograms_NH','epsc')
+
+%% only HI
+close all
+HI_idx = find(CP_sub==1);
+fig = plot_audiogram_groups(HI_idx,age_sub,aud,aud_freq,cmap)
+% save figure
+title(['HI, n=' num2str(length(HI_idx))])
+saveas(fig,'figs/audiograms_HI','epsc')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% age plots
+% all
+close all
 hist(age_sub,max(age_sub)-min(age_sub))
 xlabel('Age (years)')
 ylabel('nr. of participants')
 hold on
-plot([25 25],[0 4],'k--')
-plot([60 60],[0 4],'k--')
+plot([25 25],[0 8],'k--')
+plot([60 60],[0 8],'k--')
 set(gca,'fontsize',16)
 xlim([16 70])
 set(gcf,'position',[305 412 432 299])
-
+%title(['all, n=' num2str(length(idx))])
+fig= gcf
+saveas(fig,'figs/age_hist_all','epsc')
 %% grouped male female
 figure(3)
 Y   = gender_sub(find(age_sub<=25)); 
@@ -110,14 +145,16 @@ xlabel('Group')
 xtickangle(45);
 ylabel('Nr. of participants')
 set(gca,'xtick',[1:3],'xticklabels',{'Y','O1','O2'},'fontsize',16)
-legend(b1,'Female','Male')
-b1(1).FaceColor = [0.2 0.2 0.5]
-b1(2).FaceColor = [0.5 0.7 0.5]
+hleg = legend(b1,'Female','Male')
+b1(1).FaceColor = [0.2 0.2 0.5];
+b1(2).FaceColor = [0.5 0.7 0.5];
+hleg.Position = [0.6188 0.7419 0.2824 0.1689];
 set(gcf,'position',[305 412 432 299])
+fig= gcf
+saveas(fig,'figs/age_hist_gender','epsc')
 
 %% grouped male female and HI
-HI_idx = zeros(length(gender_sub),1);
-HI_idx([14,24,31,42,45,46]) = 1; HI_idx=logical(HI_idx); % from who-what-when
+HI_idx = (CP_sub==1)
 
 figure(4)
 Y   = gender_sub(find(age_sub<=25)); 
@@ -142,7 +179,8 @@ b1(2).FaceColor = [0.5 0.7 0.5]
 set(gcf,'position',[305 412 432 299])
 ylim([0 max(b1(1).YData)+max(b1(2).YData)+5]);
 ymax = max(b1(1).YData)+max(b1(2).YData)+5;
-
+fig= gcf
+saveas(fig,'figs/age_hist_gender_HI','epsc')
 
 %% grouped male female and HI from hvidovre
 HI_idx = zeros(length(gender_sub),1);
@@ -189,12 +227,17 @@ ylim([0 ymax]);
 figure(2)
 cmap = cbrewer('seq','YlGnBu',7+2);
 cmap = cmap(2:end,:);
-for s=1:length(d)
+plotting = 0;
+for s=98:length(d)
     
     % Load scaped data
     load([d(s).name])
     
-    stimear = dataalm.stim.ffr.ear(1);
+    if ~isempty(dataalm.stim.ffr)
+        stimear = dataalm.stim.ffr.ear(1);
+    else
+        stimear = 1;
+    end
     % does MEMR excist?
     if ~isempty(dataalm.memr)
         % MEMR
@@ -226,10 +269,30 @@ for s=1:length(d)
                 freq = dataalm.memr.L.reflex_ipsi.freq;
             end
         end
-        subplot(8,10,s)
-        for ll =1:length(levels)
-            semilogx(f_center,reflex(:,ll),'color',cmap(ll,:))
-            axis([freq(1) freq(end) -0.1 0.1])
+        if plotting
+            subplot(10,12,s)
+            for ll =1:length(levels)
+                semilogx(f_center,reflex(:,ll),'color',cmap(ll,:))
+                axis([freq(1) freq(end) -0.1 0.1])
+                a=gca;
+                a.XTick = [250,500,1000,2000,4000,8000];
+                a.XTickLabel = [{'.25'},{'.5'},{'1'},{'2'},{'4'},{'8'}];
+                %title(['\Delta absorbance = contracted - baseline. Target pressure: ', num2str(target_p), ' daPa'])
+                xlabel('Frequency [kHz]')
+                ylabel('\Delta Absorbance')
+                grid on
+                hold on
+                if ~isempty(dataalm.per)
+                    title(dataalm.per.PersonNumber)
+                else
+                    title('UH?')
+                end
+            end
+        end
+    else
+        warning('No MEMR data for subject')
+        if plotting
+            subplot(10,12,s)
             a=gca;
             a.XTick = [250,500,1000,2000,4000,8000];
             a.XTickLabel = [{'.25'},{'.5'},{'1'},{'2'},{'4'},{'8'}];
@@ -238,25 +301,8 @@ for s=1:length(d)
             ylabel('\Delta Absorbance')
             grid on
             hold on
-            if ~isempty(dataalm.per)
-            title(dataalm.per.PersonNumber)
-            else
-                title('UH?')
-            end
+            %title(dataalm.per.PersonNumber)
         end
-        
-    else
-        warning('No MEMR data for subject')
-        subplot(6,8,s)
-        a=gca;
-        a.XTick = [250,500,1000,2000,4000,8000];
-        a.XTickLabel = [{'.25'},{'.5'},{'1'},{'2'},{'4'},{'8'}];
-        %title(['\Delta absorbance = contracted - baseline. Target pressure: ', num2str(target_p), ' daPa'])
-        xlabel('Frequency [kHz]')
-        ylabel('\Delta Absorbance')
-        grid on
-        hold on
-        title(dataalm.per.PersonNumber)
         reflex = nan(16,7);
     end
     
@@ -317,6 +363,7 @@ for i=1:length(levels)
     set(gcf,'position',[228 839 432 209])
     hleg = legend(txt)
     hleg.Box = 'off'
+    hleg.Position = [0.5547 0.1231 0.3704 0.8038]
 end
 
 %% MEMR slope
@@ -324,6 +371,7 @@ end
 close all
 
 figure(4)
+MEM_slope(42,:) = nan;
 jit = randn(size(MEM_slope,1)).*0.2;
 for s=1:length(MEM_slope)
 subplot(1,3,1)
@@ -335,12 +383,17 @@ xlabel('')
 ylabel('Linear coefficient')
 set(gca,'xtick',[],'fontsize',16,'Xcolor','none')
 box off
+ylim([-0.02 0.05])
 
 end
-
-
-set(gcf,'position',[228 839 432 209])
-ylim([0 0.05])
+subplot(1,3,[2 3])
+scatter(age_sub,MEM_slope(:,1))
+set(gca,'fontsize',16,'yticklabel','')
+xlabel('Age')
+ylim([-0.02 0.05])
+%set(gcf,'position',[228 839 432 209])
+set(gcf,'position',[228 416 441 609])
+lsline
 %% TEOAE
 
 close all
@@ -430,4 +483,30 @@ plot(squeeze(teoae_sub_resp(1,:,1)),mean(teoae_sub_resp(:,:,3),1),'k')
 set(gca,'fontsize',16)
 
 %plot(squeeze(teoae_sub_resp(1,:,1)),teoae_sub_resp(:,:,2))
+
+
+%% functions
+function fig = plot_audiogram_groups(idx,age_sub,aud,aud_freq,cmap)
+for s=1:length(idx)
+            p1 = semilogx(aud_freq,aud(idx(s),:)','-','color',[cmap(age_sub(idx(s))-17,:) 0.8]);
+            plot_aud_param(p1,aud_freq);
+            hold on
+            
+            cb=colorbar;
+            
+            cb.FontSize = 12;
+            cb.Limits = [0 1];
+            cb.Ticks = [linspace(0,1,5)];
+            cb.TickLabels = {linspace(18,70,5)};
+            cb.Label.String = 'Age';
+            cb.Label.Rotation = 90;
+            cb.Label.FontSize = 16;
+            cb.Label.FontName = 'Arial';
+            colormap(cmap)
+end
+set(gcf,'position',[305 412 432 299]);
+fig = gcf
+fig=gcf;
+end
+
 

@@ -11,7 +11,7 @@ cd('_EEG/_preprocdata_FFR');
 subdir = dir('UH*');
   
 %%
-for s=setdiff(79:length(subdir),[2])
+for s=setdiff(1:length(subdir),[2])
     % Select preprocessed .mat file to process
     cd(datadir);
     cd(subdir(s).name(1:4));

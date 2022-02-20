@@ -11,7 +11,7 @@ ax.YGrid= 'on'
 
 set(gca,'Fontsize',fsize);
 
-ax = ancestor(plotid, 'axes');
+ax = ancestor(gca, 'axes');
 xrule = ax.XAxis;
 
 xlim([200 20000])

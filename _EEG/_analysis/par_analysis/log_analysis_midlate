@@ -1,0 +1,2913 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+ project directory now added to the current path 
+
+ directory addded to the path
+subdir = 
+
+  106x1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum
+
+Starting parallel pool (parpool) using the 'dcc' profile ...
+
+additionalSubmitArgs =
+
+    '-n 20 -q hpc -R "span[ptile=20]" -W 20:00 -R "rusage[mem=10GB]"'
+
+Connected to the parallel pool (number of workers: 20).
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 723 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 723 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 720 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 723 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 721 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 722 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 714 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 719 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 721 MB
+Epoching data
+trials done.
+14.45 % of trials rejected! 
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 720 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 724 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 717 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 722 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 720 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 717 MB
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 722 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+Epoching data
+trials done.
+0.78 % of trials rejected! 
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+Epoching data
+trials done.
+0.73 % of trials rejected! 
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 717 MB
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+Epoching data
+trials done.
+0.90 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+Epoching data
+trials done.
+1.90 % of trials rejected! 
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 716 MB
+Epoching data
+trials done.
+0.57 % of trials rejected! 
+Epoching data
+trials done.
+100.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: no data processed for subject UH020_ABR.mat
+> In midlate_analysis_par (line 162)
+In parallel_function>make_general_channel/channel_general (line 847)
+In remoteParallelFunction (line 67)
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 720 MB
+Epoching data
+trials done.
+1.25 % of trials rejected! 
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+Epoching data
+trials done.
+3.10 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 702 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 4 MB
+Epoching data
+trials done.
+14.45 % of trials rejected! 
+1.37 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 701 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 700 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 700 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 703 MB
+Epoching data
+trials done.
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 724 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 724 MB
+Epoching data
+trials done.
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 722 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 725 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 725 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+0.05 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 700 MB
+0.73 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 701 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 702 MB
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+0.10 % of trials rejected! 
+0.90 % of trials rejected! 
+26.33 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 722 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.78 % of trials rejected! 
+1.63 % of trials rejected! 
+Epoching data
+trials done.
+1.90 % of trials rejected! 
+2.12 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 721 MB
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+0.03 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 701 MB
+Epoching data
+trials done.
+0.57 % of trials rejected! 
+0.52 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.17 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 705 MB
+Epoching data
+trials done.
+1.25 % of trials rejected! 
+2.47 % of trials rejected! 
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+0.23 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 723 MB
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+0.35 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH003_ABR.mat processed...
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH018_ABR.mat processed...
+Epoching data
+trials done.
+3.10 % of trials rejected! 
+3.22 % of trials rejected! 
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.73 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH010_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH016_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH004_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH005_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH006_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH008_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH009_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH013_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH017_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH007_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH019_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH001_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH012_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH014_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH015_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH002_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH011_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 45 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.17 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 26 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 557 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 700 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 18 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 3 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 42 MB
+Epoching data
+trials done.
+1.62 % of trials rejected! 
+Epoching data
+trials done.
+0.72 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 28 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 15 MB
+Epoching data
+trials done.
+2.62 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 13 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 18 MB
+Epoching data
+trials done.
+0.62 % of trials rejected! 
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 24 MB
+Epoching data
+trials done.
+0.40 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 40 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 42 MB
+Epoching data
+trials done.
+2.38 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 35 MB
+Epoching data
+trials done.
+0.30 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 21 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 17 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 19 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH061_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 715 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 38 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+3.38 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+4.78 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.72 % of trials rejected! 
+0.12 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+Epoching data
+trials done.
+1.62 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 706 MB
+Epoching data
+trials done.
+1.62 % of trials rejected! 
+7.94 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+2.62 % of trials rejected! 
+0.35 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.62 % of trials rejected! 
+0.92 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 699 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 700 MB
+Epoching data
+trials done.
+2.38 % of trials rejected! 
+9.99 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 698 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH027_ABR.mat processed...
+trials done.
+0.30 % of trials rejected! 
+0.87 % of trials rejected! 
+Epoching data
+trials done.
+0.40 % of trials rejected! 
+0.57 % of trials rejected! 
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+
+fs =
+
+        4096
+
+Subject UH057_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+1.13 % of trials rejected! 
+Epoching data
+trials done.
+0.72 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: no data processed for subject UH053_ABR.mat
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+0.08 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH041_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 698 MB
+Epoching data
+trials done.
+Epoching data
+trials done.
+4.78 % of trials rejected! 
+15.94 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH055_ABR.mat processed...
+Epoching data
+trials done.
+3.38 % of trials rejected! 
+13.24 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH029_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH037_ABR.mat processed...
+1.62 % of trials rejected! 
+3.09 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 17 MB
+Epoching data
+trials done.
+0.38 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH033_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH039_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH047_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH035_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH045_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH049_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH051_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH023_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH025_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: no data processed for subject UH056_ABR.mat
+
+fs =
+
+        4096
+
+Subject UH059_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH043_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 692 MB
+Epoching data
+trials done.
+0.38 % of trials rejected! 
+1.92 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.17 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH031_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 21 MB
+
+fs =
+
+        4096
+
+Subject UH052_ABR.mat processed...
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 23 MB
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 32 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+
+fs =
+
+        4096
+
+Subject UH030_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 70 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 44 MB
+Epoching data
+trials done.
+0.18 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 55 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH058_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 43 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 28 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 701 MB
+Epoching data
+trials done.
+0.88 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 68 MB
+Epoching data
+trials done.
+7.18 % of trials rejected! 
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 70 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 30 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 46 MB
+Epoching data
+trials done.
+0.67 % of trials rejected! 
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 63 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 48 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 44 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 52 MB
+Epoching data
+trials done.
+2.65 % of trials rejected! 
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+Epoching data
+trials done.
+0.42 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 23 MB
+Epoching data
+trials done.
+0.30 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.63 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH060_ABR.mat processed...
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+trials done.
+0.05 % of trials rejected! 
+0.23 % of trials rejected! 
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+0.18 % of trials rejected! 
+0.13 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 715 MB
+Epoching data
+trials done.
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 700 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+1.32 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+7.18 % of trials rejected! 
+5.50 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+0.17 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.67 % of trials rejected! 
+0.33 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH026_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.88 % of trials rejected! 
+0.82 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 700 MB
+
+fs =
+
+        4096
+
+Subject UH040_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 707 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 715 MB
+Epoching data
+Epoching data
+trials done.
+2.65 % of trials rejected! 
+0.32 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 698 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.13 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.63 % of trials rejected! 
+0.20 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 43 MB
+
+fs =
+
+        4096
+
+Subject UH054_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.02 % of trials rejected! 
+trials done.
+0.05 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.30 % of trials rejected! 
+0.28 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH046_ABR.mat processed...
+Epoching data
+trials done.
+0.42 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH032_ABR.mat processed...
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH064_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH036_ABR.mat processed...
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.10 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH044_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH034_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH038_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH024_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH028_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH048_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH050_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH042_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH022_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 706 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 26 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 45 MB
+Epoching data
+trials done.
+2.58 % of trials rejected! 
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH066_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+1.57 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+Epoching data
+trials done.
+2.58 % of trials rejected! 
+3.43 % of trials rejected! 
+0.25 % of trials rejected! 
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.57 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH063_ABR.mat processed...
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Subject UH069_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH075_ABR.mat processed...
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 187 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 65 MB
+Epoching data
+trials done.
+7.80 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: no data processed for subject UH077_ABR.mat
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 83 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 51 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 54 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH076_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 56 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+Epoching data
+trials done.
+1.35 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 81 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 708 MB
+Epoching data
+trials done.
+0.18 % of trials rejected! 
+Epoching data
+trials done.
+0.88 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+1.48 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 57 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.08 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 55 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 16 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 779 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 56 MB
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+7.80 % of trials rejected! 
+12.34 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 76 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+Epoching data
+trials done.
+4.57 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+0.17 % of trials rejected! 
+0.08 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 715 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.23 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH062_ABR.mat processed...
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 64 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 715 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 714 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.13 % of trials rejected! 
+1.35 % of trials rejected! 
+9.37 % of trials rejected! 
+Epoching data
+trials done.
+99.93 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: no data processed for subject UH073_ABR.mat
+Epoching data
+trials done.
+0.18 % of trials rejected! 
+0.47 % of trials rejected! 
+0.88 % of trials rejected! 
+4.05 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH065_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH072_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 719 MB
+Epoching data
+trials done.
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 714 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+Epoching data
+trials done.
+1.48 % of trials rejected! 
+0.03 % of trials rejected! 
+4.57 % of trials rejected! 
+76.64 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH078_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 721 MB
+Epoching data
+trials done.
+
+fs =
+
+        4096
+
+Subject UH083_ABR.mat processed...
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+0.62 % of trials rejected! 
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.07 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Subject UH071_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH074_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH070_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 690 MB
+0.20 % of trials rejected! 
+6.33 % of trials rejected! 
+Epoching data
+trials done.
+0.23 % of trials rejected! 
+0.67 % of trials rejected! 
+Epoching data
+trials done.
+0.68 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH080_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH081_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH068_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH079_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH082_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 271 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 38 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 717 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 63 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.68 % of trials rejected! 
+0.60 % of trials rejected! 
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+Epoching data
+trials done.
+2.12 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Subject UH084_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 719 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 698 MB
+Epoching data
+trials done.
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+2.12 % of trials rejected! 
+5.30 % of trials rejected! 
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+0.08 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH089_ABR.mat processed...
+Epoching data
+trials done.
+0.48 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 689 MB
+
+fs =
+
+        4096
+
+Subject UH086_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH085_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 71 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH092_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 66 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.48 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH094_ABR.mat processed...
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+Epoching data
+trials done.
+0.38 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 61 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 47 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 67 MB
+
+fs =
+
+        4096
+
+Subject UH102_ABR.mat processed...
+Epoching data
+trials done.
+0.87 % of trials rejected! 
+Epoching data
+trials done.
+24.38 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 85 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 713 MB
+Epoching data
+trials done.
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 561 MB
+Epoching data
+trials done.
+0.68 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 46 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+0.38 % of trials rejected! 
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 61 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 36 MB
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+0.30 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 706 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+0.07 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 721 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 82 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+Epoching data
+trials done.
+1.57 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+3.02 % of trials rejected! 
+Epoching data
+trials done.
+0.77 % of trials rejected! 
+24.38 % of trials rejected! 
+3.37 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH088_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+Epoching data
+trials done.
+0.87 % of trials rejected! 
+0.80 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH090_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+trials done.
+0.03 % of trials rejected! 
+0.93 % of trials rejected! 
+0.68 % of trials rejected! 
+0.17 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH093_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH104_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH095_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Subject UH096_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 717 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 707 MB
+Epoching data
+trials done.
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 720 MB
+
+fs =
+
+        4096
+
+Subject UH108_ABR.mat processed...
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+Epoching data
+trials done.
+3.02 % of trials rejected! 
+47.32 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH097_ABR.mat processed...
+0.13 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+1.57 % of trials rejected! 
+0.28 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH098_ABR.mat processed...
+trials done.
+0.77 % of trials rejected! 
+1.63 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH106_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH112_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH110_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 11 MB
+Epoching data
+trials done.
+0.58 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+0.58 % of trials rejected! 
+1.25 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH101_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 58 MB
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 70 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 85 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+Epoching data
+trials done.
+3.83 % of trials rejected! 
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 719 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 63 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 691 MB
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 2 seconds and required the additional allocation of an estimated 716 MB
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 691 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+3.83 % of trials rejected! 
+5.45 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH103_ABR.mat processed...
+
+fs =
+
+        4096
+
+Warning: FieldTrip:warning_dimord_could_not_be_determined:getdimord:ft_selectdata:midlate_analysis_par:make_general_channel/channel_general:remoteParallelFunction:line621
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/parallel/remoteParallelFunction.m',67,1)">remoteParallelFunction at line 67</a>
+ In <a href = "matlab: opentoline('/appl/matlab/990/toolbox/matlab/lang/parallel_function.m',847,1)">parallel_function>make_general_channel/channel_general at line 847</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/midlate_analysis_par.m',46,1)">midlate_analysis_par at line 46</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 698 MB
+
+fs =
+
+        4096
+
+Subject UH107_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH111_ABR.mat processed...
+
+fs =
+
+        4096
+
+Subject UH105_ABR.mat processed...
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.13 % of trials rejected! 
+
+fs =
+
+        4096
+
+Subject UH109_ABR.mat processed...

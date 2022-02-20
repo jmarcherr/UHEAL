@@ -13,7 +13,7 @@ subdir = dir('UH*')
 for s=1:length(subdir)
     % Select preprocessed .mat file to process
     cd(datadir);
-    cd(subdir(s).name(1:4));
+    cd(subdir(s).name(1:5));
     %stim
     stimname = dir('ffr_SW_stim_*');
     try
@@ -38,30 +38,30 @@ for s=1:length(subdir)
 
     fs = data.fsample;
     
-    chaoi = [2,3,4,7,8,9,10,12,14,16];
+    chaoi = 1:16;%[2,3,4,7,8,9,10,12,14,16];
     chans =chaoi;%3,4,5,7,8,9,12,14,15,16]; %left tiptrode
     cco=1;
     for kk=1 % condition loop
         
-        trials_oi =find(data.trialinfo==1);
-        trials_inv = find(data.trialinfo==2); %inverted
+        trials_oi =find(data.trialinfo);
+        %trials_inv = find(data.trialinfo==2); %inverted
         
-        if length(trials_oi)~=length(trials_inv)
-            [a,b]=min([length(trials_oi) length(trials_inv)]);
-            trials_oi = trials_oi(1:a);
-            trials_inv = trials_inv(1:a);
-        end
+%         if length(trials_oi)~=length(trials_inv)
+%             [a,b]=min([length(trials_oi) length(trials_inv)]);
+%             trials_oi = trials_oi(1:a);
+%             trials_inv = trials_inv(1:a);
+%         end
         cfg = [];
         cfg.channel = {data.label{[chans]}};%,data.label{[2]}, data.label{5}};
         data_cond = ft_selectdata(cfg,data);
         time = data.time{1};
         
-        tidx = find(time>=0 & time<0.5); % pt
+        tidx = find(time>=0 & time<3.5); % pt
         
         % epoch data
         epoched_data = epoch_data_3(data_cond,1,trials_oi); %epoch x chan x time
-        epoched_inv = epoch_data_3(data_cond,1,trials_inv); %inverted
-        epoched_data = [epoched_data+epoched_inv]/2;
+        %epoched_inv = epoch_data_3(data_cond,1,trials_inv); %inverted
+        %epoched_data = [epoched_data+epoched_inv]/2;
         
         % artifact rejection and weighting
         reject_epoch = 0;
@@ -91,7 +91,7 @@ for s=1:length(subdir)
         %% weighted average
         fs = data.fsample;
         time = data.time{1};
-        tidx = find(time>=0 & time<.5);
+        tidx = find(time>=0 & time<3);
         var_tmp =[];data_weighted=[];epoch_var=[];
         for cc=1:size(data_cc,1)
             for ii=1:size(data_cc,3) %chan x time x trials
@@ -100,6 +100,11 @@ for s=1:length(subdir)
                 epoch_var(cc,ii) = var_tmp(cc,ii).^(-1);
                 
             end
+        this_var = epoch_var(cc,:);
+        this_var = this_var(:);
+        summed_trials =sum(data_weighted(cc,:,:),3);
+        summed_weights = sum(this_var);
+        data_w(cc,:) = summed_trials./summed_weights;
         end
         
         catdata = [];%squeeze(zeros(size(data_weighted(1,:,:))));
@@ -162,15 +167,16 @@ for s=1:length(subdir)
 
 %% ------------------------ Analysis ------------------------
 close all
-foi = [4,8];
+foi = [2,4,8];
 %itpc_sub=[];
-for ff =1:2
+for ff =1:3
     
-    time = 0:1/fs:length(data_filt(1,1,:))/fs-1/fs;
+    time = 0:1/fs:length(data_w(1,:))/fs-1/fs;
     %for s=1:length(subjects)
+    for cc=1:16
         for kk=1
             fid = foi(ff);
-            tmp_data = squeeze(data_filt(s,kk,:));
+            tmp_data = squeeze(data_w(cc,:));
             M=tmp_data;
             N=size(tmp_data,1);
             f_fft = [];
@@ -187,21 +193,22 @@ for ff =1:2
             %get powerbin
             f_fft_sub_pow = fft_sub(find(f==fid));
             % spectrum
-            fft_spec(s,ff,:) = fft_sub;
-            
+            fft_spec(s,ff,cc,:) = fft_sub;
+        
+        
             % get noise
             noisebw =1.2;
             nonfreqs = [fid+4 fid-4]';
             f_fft_noise = mean(fft_sub(find([f>=fid-noisebw & f<=fid+noisebw & f~=fid & f~=nonfreqs])));
             
             %F-statistic
-            F(s,ff)=f_fft_sub_pow/f_fft_noise;
+            F(s,ff,cc)=f_fft_sub_pow/f_fft_noise;
             bg_freq = find([f>=fid-noisebw & f<=fid+noisebw & f~=fid]);
-            F_crit(s,ff) = finv(0.99,2,2*length(bg_freq));
+            F_crit(s,ff,cc) = finv(0.99,2,2*length(bg_freq));
             
             %SNR
-            SNR(s) = db(f_fft_sub_pow)-db(f_fft_noise)
-            EFR(s) =f_fft_sub_pow;
+            SNR(s,ff,cc) = db(f_fft_sub_pow)-db(f_fft_noise)
+            EFR(s,ff,cc) =f_fft_sub_pow;
             %plotting
             %figure(s)
             
@@ -222,7 +229,7 @@ for ff =1:2
             %plot(time,tmp_data)
             %set(gca,'fontsize',18)
             %xlabel('time(s)')
-                   
+        end
             
         end
 %        title(subjects{s})

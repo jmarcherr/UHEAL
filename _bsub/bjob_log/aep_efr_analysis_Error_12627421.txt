@@ -1,0 +1,4 @@
+{Error using run_EFR_analysis_par (line 23)
+Error: File: /work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/AEP_EFR_analysis_par_tips.m Line: 184 Column: 78
+Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 

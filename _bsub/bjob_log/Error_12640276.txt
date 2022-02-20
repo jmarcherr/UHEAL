@@ -1,0 +1,62 @@
+Warning: Valid memr data is missing from folder UH003. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH004. None was accepted and saved.
+
+Warning: Valid nesi data is missing from folder UH011. None was accepted and saved.
+
+Warning: Valid nesi data is missing from folder UH028. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH031. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH033. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH048. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH049. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH067. None was accepted and saved.
+
+Warning: Valid acalos data is missing from folder UH072. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH074. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH079. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH089. None was accepted and saved.
+
+Warning: Valid acalos data is missing from folder UH096. None was accepted and saved.
+
+Warning: Valid acalos data is missing from folder UH098. None was accepted and saved.
+
+Warning: Valid acalos + nesi + ssq + eeg data is missing from folder UH099. None was accepted and saved.
+
+Warning: Valid memr + acalos data is missing from folder UH100. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH101. None was accepted and saved.
+
+Warning: Valid acalos + nesi + ssq data is missing from folder UH105. None was accepted and saved.
+
+Warning: Valid rds + nesi + ssq data is missing from folder UH106. None was accepted and saved.
+
+Warning: Valid memr + nesi + ssq data is missing from folder UH107. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH108. None was accepted and saved.
+
+Warning: Valid memr + nesi + ssq data is missing from folder UH109. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH110. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH111. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH112. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH113. None was accepted and saved.
+
+Warning: Valid memr + nesi + ssq data is missing from folder UH114. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH115. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH116. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH117. None was accepted and saved.
+

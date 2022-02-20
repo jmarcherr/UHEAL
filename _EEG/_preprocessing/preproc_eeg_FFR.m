@@ -9,7 +9,7 @@ numsub = length(d);
 %d = dir('*.bdf');
  
 %% ------------Import data ----------------------------------------
-for dd=85:length(d)
+for dd=1:length(d)
 cd(datadir)
 cd(d(dd).name)
 

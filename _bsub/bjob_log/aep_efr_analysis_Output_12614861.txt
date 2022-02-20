@@ -1,0 +1,977 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+ project directory now added to the current path 
+
+ directory addded to the path
+subdir = 
+
+  105x1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum
+
+Starting parallel pool (parpool) using the 'dcc' profile ...
+
+additionalSubmitArgs =
+
+    '-n 20 -q hpc -R "span[ptile=20]" -W 20:00 -R "rusage[mem=8GB]"'
+
+Connected to the parallel pool (number of workers: 20).
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 12 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 12 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 13 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 13 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 14 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 8 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 14 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 8 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 11 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 7 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 14 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 8 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 13 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 10 MB
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 12 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 4 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 3 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+        4096
+

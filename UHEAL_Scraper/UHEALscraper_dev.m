@@ -9,7 +9,8 @@
 %              even if file is anonymised (data.alm deleted)
 
 % Jonatan Marcher-R?rsted (jonmarc@dtu.dk)
-% 17/05/2021 - added extraction of NESI, SSQ12, TTS and ACALOS
+% 17/05/2021 - added extraction of NESI, SSQ12, TTS and ACALOS + EEG lab
+% and age
 
 
 %% Dependencies:
@@ -71,7 +72,7 @@
 
 %% Function Begins
 
-function UHEALscraper(datafol) 
+function UHEALscraper(s,datafol) 
 
 
 %% Preamble
@@ -82,10 +83,12 @@ errors = {}; %clues to things that went wrong will be stored here
 % %insert here where the data is stored (manual override)
 % datafol = 'C:\Users\sadaw\Documents\UHEAL\Data';
 %datafol = 'O:\Public\Hearing-Systems-group\cahr\Temporary_ftp\UHEAL\UHEAL_data'
-datafol_remote = '/Volumes/Department/Sund/Public/Hearing-Systems-group/cahr/Temporary_ftp/UHEAL/UHEAL_data'
-
+%datafol_remote = '/Volumes/Department/Sund/Public/Hearing-Systems-group/cahr/Temporary_ftp/UHEAL/UHEAL_data'
+datafol_remote = '/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data';
 addpath(datafol);
 addpath(datafol_remote);
+% dependent scripts
+addpath('/work1/jonmarc/UHEAL_master/UHEAL/_scripts');
 root = cd;
 cont = dir(datafol_remote);
 cont = cont(~ismember({cont.name},{'.','..'}));
@@ -103,7 +106,7 @@ outputfol = fullfile(cd);
 
 fprintf('Found %d subject/session folders.\n',size(sfol,1))
 
-for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
+parfor i = 1:size(sfol,1) %loop across subject/session folders
     cd(datafol_remote)
     cd(sfol(i).name)%enter each folder
     fprintf('Entered folder: %s \n',sfol(i).name)
@@ -211,6 +214,8 @@ for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
 
                     %call function to organise and process audiogram data
                     [dataalm.aud, errorAUD] = scrapeAUD(tmp);
+                    
+
                     fprintf('Saved\n')
                     
                     for n = 1:size(errorAUD,1)
@@ -288,7 +293,7 @@ for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
             end
         end
     end
-
+    
     
     %% save name of EEG .bdf file for calling into FieldTrip
     
@@ -453,7 +458,9 @@ for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
 
     %% begin processing .dat files (ACALOS)
     fprintf('Processing .dat files.\nFound %d: \n', size(contD,1))
-    
+    if i == 96
+        dataalm.acalos = [];
+    else
      if size(contD,1) > 2
                     warning('More than 2 dat data files found in %s, extras are ignored.', sfol(i).name)
                     
@@ -469,7 +476,8 @@ for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
     
      if ~isempty(contD) %if some .dat files exist
          for j = 1:size(contD,1)
-               tmp = load(contD(j).name); %load in the first .mat file
+               tmp_dat = importdata(contD(j).name); %load in the first .mat file
+               tmp = tmp_dat.data;
                
                %use field names to check what kind of data file this is
                dim = size(tmp);
@@ -526,13 +534,67 @@ for i = 1%[18,19,20,22] %106:size(sfol,1) %loop across subject/session folders
                end
           end
            
-          
+    
      end
+    end
+
+     %% Get age and gender - jonmarc 2022
+     
+     if strcmp(dataalm.id,'UH022')
+         age = 23;
+         gender = 1;
+     elseif strcmp(dataalm.id,'UH033')
+         age = 19;
+         gender = 1;
+     elseif strcmp(dataalm.id,'UH106')
+         age = 51;
+         gender = 1;
+     elseif strcmp(dataalm.id,'UH091')
+         age = 19;
+         gender = 2;         
+     elseif ~isempty(dataalm.aud)
+         [age,~,~,~,gender] = get_aud(dataalm);
+     else
+         age = []; gender = [];
+     end
+     
+     dataalm.age = age;
+     dataalm.gender = gender; % 1=female, 2=male
+    
+
+    cd('..') %return to root folder
+    %% get measurement place and CP
+    
+    cd ..
+    disp('Getting measurement place...')
+    % sub info
+    eeglab_dir=dir('*.xlsx');
+    [~,tmp]     = xlsread(eeglab_dir.name,1,'A1:A200');
+    [~,lab_tmp] = xlsread(eeglab_dir.name,1,'B1:B200');
+    [~,CP]      = xlsread(eeglab_dir.name,1,'C1:C200');
+    
+    id = find(strcmp(dataalm.id,tmp));
+    
+    % get lab
+    if id
+        dataalm.lab = lab_tmp{id};
+    else
+        dataalm.lab = nan;
+    end
+    
+    % get CP
+    if strcmp(CP{id},'NH')
+        dataalm.CP  = 0;
+    elseif strcmp(CP{id},'HI')
+        dataalm.CP = 1;
+    else
+        dataalm.CP = nan;
+    end
+    
     
     fprintf('Folder %s was processed.\n The resulting data struct:\n', sfol(i).name)
     disp(dataalm)
-    cd('..') %return to root folder
-    
+    %%
     cd(outputfol)
     save(sfol(i).name,'dataalm') %save the amalgamated data struct into the output folder
     cd('..')
