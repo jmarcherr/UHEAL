@@ -1,13 +1,17 @@
 cd('/work1/jonmarc/UHEAL_master/UHEAL')
 UHEAL_startup
 ft_defaults
+
 % dir with preproc data
 eeg_dir = '/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_preprocdata_FFR_4Hz';
+
 % dir with subject info
 clin_dir = '/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped';
 cd(eeg_dir)
+
 % subject
 subdir = dir('UH*')
+
 %CP = [1,1];
 % 
  %% HPC cluster parameters
