@@ -34,11 +34,22 @@ for s=1:length(d)
     age_sub(s) = results{s}.age_sub;
     aud(s,:,:) = results{s}.aud;
     aud_freq = results{s}.aud_freq;
+    PTA_HF(s) = nanmean(results{s}.aud(7:end)); % PTA 9-16k
+    PTA_LF(s) = nanmean(results{s}.aud(1:6));   % PTA 250-8k
     CP_sub(s,:) = results{s}.CP_sub;
     gender_sub(s,:) = results{s}.gender_sub;
     HV_sub(s) = results{s}.HV_sub;
-    subid{s} = results{s}.sub_id;
+    subid(s) = str2double(results{s}.sub_id(3:5));
 end
+uheal_data = struct;
+uheal_data.subid = subid';
+uheal_data.Age = age_sub';
+uheal_data.CP = CP_sub;
+uheal_data.gender = gender_sub;
+uheal_data.DRCMR = HV_sub';
+uheal_data.PTA_lf = PTA_LF';
+uheal_data.PTA_hf = PTA_HF';
+
 %%
 idx = find(~isnan(age_sub));
 fig = plot_audiogram_groups(idx,age_sub,aud,aud_freq,cmap)
@@ -184,6 +195,10 @@ end
     levels = results{1}.memr.levels;
     f_center = results{1}.memr.f_center
     freq = results{1}.memr.freq;
+    
+ uheal_data.memr = MEM_slope(:,1);   
+    
+    
 %% average plots
 
 close all
@@ -373,7 +388,14 @@ for s=1:length(d)
     ssq(s,:)= normalize(results{s}.ssq(:,2));
     end
 end
+%% save to uheal struct
+uheal_data.rds = rds';
+uheal_data.fds = fds';
+uheal_data.nesi =nesi';
+uheal_data.tts = tts';
+uheal_data.ssq12 = nanmean(ssq,2);
 
+%%
 figure('Renderer','painter')
 scatter(age_sub,rds,'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
 ll=lsline
@@ -502,7 +524,7 @@ for s=1:length(d)
     disp(['subject ' num2str(s) ' processed'])
 end
 
-
+uheal_data.acalos_slope = AC_slope;
 %% plotting
 close all
 YNH = find(age_sub<25);
@@ -556,6 +578,12 @@ scatter(age_sub(find(CP_sub)),AC_slope(find(CP_sub),ii),'rx')
 end
 fig= gcf
 saveas(fig,'figs/ACALOS_slope','epsc')
+
+%% save uheal data
+uheal_table = struct2table(uheal_data)
+writetable(uheal_table,'uheal_data_clin.csv')  
+save('uheal_data_clin.mat','uheal_data')
+
 %% functions
 function fig = plot_audiogram_groups(idx,age_sub,aud,aud_freq,cmap)
 for s=1:length(idx)

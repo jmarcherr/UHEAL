@@ -1,0 +1,1500 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Found 117 subject/session folders.
+Entered folder: UH001 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH001] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+AUDIOGRAM_UH01(Selected Session).xml 
+TEOAE_UH01.xml 
+File "AUDIOGRAM_UH01(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+[Warning: It appears as this audiogram was not performed with different headphones for the low & high frequencies] 
+[> In scrapeAUD (line 50)
+In UHEALscraper_par (line 220)
+In main (line 11)] 
+Saved
+File "TEOAE_UH01.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH01.xlsx 
+SSQ12_UH01.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 8: 
+[Warning: More than 7 Matlab data files found in UH001, extras are ignored.] 
+[> In UHEALscraper_par (line 325)
+In main (line 11)] 
+[Warning: MEMR files properly named ending as "_L" or "_R" will take precidence.] 
+[> In UHEALscraper_par (line 326)
+In main (line 11)] 
+Found a STIM aep data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a RDS data file.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+Found a RDS data file.
+[Warning: An RDS file was already read in from this folder. Additional ones are ignored.] 
+[> In UHEALscraper_par (line 390)
+In main (line 11)] 
+Found a RDS data file.
+[Warning: An RDS file was already read in from this folder. Additional ones are ignored.] 
+[> In UHEALscraper_par (line 390)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: HTL estimation failed for this dataset. Threshold estimation was not applied.
+Saved
+Getting measurement place...
+Folder UH001 was processed.
+ The resulting data struct:
+         id: 'UH001'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 20.2363
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'JM160620.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH002 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH002] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH02.xlsx 
+SSQ12_UH02.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 6: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: HTL estimation failed for this dataset. Threshold estimation was not applied.
+Saved
+Getting measurement place...
+Folder UH002 was processed.
+ The resulting data struct:
+         id: 'UH002'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 10.8489
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'GE09062020.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH003 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH003] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+audUHEAL03(Selected Session).xml 
+teoae.xml 
+File "audUHEAL03(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+[Warning: It appears as this audiogram was not performed with different headphones for the low & high frequencies] 
+[> In scrapeAUD (line 50)
+In UHEALscraper_par (line 220)
+In main (line 11)] 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+[Warning: Some TEOAE  data is missing from file "teoae.xml" in folder UH003.
+] 
+[> In UHEALscraper_par (line 246)
+In main (line 11)] 
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH03.xlsx 
+SSQ12_UH03.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 5: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH003 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH003 was processed.
+ The resulting data struct:
+         id: 'UH003'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: []
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 0
+        ssq: [12x2 double]
+        tts: 1
+        eeg: {'UHEAL03_AR.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH004 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH004] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH04.xlsx 
+SSQ12_UH04.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 5: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH004 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH004 was processed.
+ The resulting data struct:
+         id: 'UH004'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: []
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 22.5289
+        ssq: [12x2 double]
+        tts: 1
+        eeg: {'UHEAL04_AR.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH005 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH005] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH05.xlsx 
+SSQ12_UH05.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH005 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH005 was processed.
+ The resulting data struct:
+         id: 'UH005'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 1.2676
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL05_AM.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH006 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH006] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH06.xlsx 
+SSQ12_UH06.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH006 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: HTL estimation failed for this dataset. Threshold estimation was not applied.
+Saved
+Getting measurement place...
+Folder UH006 was processed.
+ The resulting data struct:
+         id: 'UH006'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 1.2797
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'UHEAL06_JB.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH007 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH007] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH07.xlsx 
+SSQ12_UH07.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH007 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH007 was processed.
+ The resulting data struct:
+         id: 'UH007'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 54.0397
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL07_KR.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH008 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH008] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud_corrected(Selected Session).xml 
+teoae.xml 
+File "aud_corrected(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH08.xlsx 
+SSQ12_UH08.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH008 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH008 was processed.
+ The resulting data struct:
+         id: 'UH008'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 2.4530
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL08_LR.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH009 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH009] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH09.xlsx 
+SSQ12_UH09.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH009 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH009 was processed.
+ The resulting data struct:
+         id: 'UH009'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 3.2912
+        ssq: [12x2 double]
+        tts: 1
+        eeg: {'UHEAL09_LL.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH010 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH010] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+TEOAE.xml 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+File "TEOAE.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+[Warning: It appears as this audiogram was not performed with different headphones for the low & high frequencies] 
+[> In scrapeAUD (line 50)
+In UHEALscraper_par (line 220)
+In main (line 11)] 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+Processing .xlsx files.
+Found 2: 
+NESI_UH10.xlsx 
+SSQ12_UH10.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 6: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH010 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH010 was processed.
+ The resulting data struct:
+         id: 'UH010'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 2.0551
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL10_JS.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH011 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH011] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 4: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Overlay 2).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Overlay 2).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+[Warning: Some TEOAE  data is missing from file "teoae.xml" in folder UH011.
+] 
+[> In UHEALscraper_par (line 246)
+In main (line 11)] 
+Saved
+Processing .xlsx files.
+Found 1: 
+SSQ12_UH11.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH011 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH011 was processed.
+ The resulting data struct:
+         id: 'UH011'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: []
+        ssq: [12x2 double]
+        tts: []
+        eeg: {'UHEAL11_CK..bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH012 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH012] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+TEOAE.xml 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+File "TEOAE.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+Processing .xlsx files.
+Found 2: 
+NESI_UH12.xlsx 
+SSQ12_UH12.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a MEMR data file.
+[Warning: MG_R2.mat in UH012 was not named identifying if it was L/R. Saved under field "unidentified".] 
+[> In UHEALscraper_par (line 378)
+In main (line 11)] 
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH012 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH012 was processed.
+ The resulting data struct:
+         id: 'UH012'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 0.4314
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL12_MG.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH013 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH013] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH13.xlsx 
+SSQ12_UH13.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 6: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH013 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH013 was processed.
+ The resulting data struct:
+         id: 'UH013'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 61.9150
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL13_MP.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH014 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH014] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH14.xlsx 
+SSQ12_UH14.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH014 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH014 was processed.
+ The resulting data struct:
+         id: 'UH014'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 0.6372
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'UHEAL14_CS.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH015 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH015] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 2: 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH15.xlsx 
+SSQ12_UH15.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH015 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH015 was processed.
+ The resulting data struct:
+         id: 'UH015'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 225.2837
+        ssq: [12x2 double]
+        tts: 5
+        eeg: {'UHEAL15_AG.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH016 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH016] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH16.xlsx 
+SSQ12_UH16.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 6: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH016 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH016 was processed.
+ The resulting data struct:
+         id: 'UH016'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 1.7973
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'UHEAL16_MS.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH017 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH017] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH17.xlsx 
+SSQ12_UH17.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 6: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH017 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH017 was processed.
+ The resulting data struct:
+         id: 'UH017'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 1.6161
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'UHEAL17_JP.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH018 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH018] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH18.xlsx 
+SSQ12_UH18.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH018 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH018 was processed.
+ The resulting data struct:
+         id: 'UH018'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 36.6356
+        ssq: [12x2 double]
+        tts: 4
+        eeg: {'UHEAL18_DR.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH019 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH019] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 3: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH19.xlsx 
+SSQ12_UH19.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH019 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
+Getting measurement place...
+Folder UH019 was processed.
+ The resulting data struct:
+         id: 'UH019'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 10.5962
+        ssq: [12x2 double]
+        tts: 3
+        eeg: {'UHEAL19_PA.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+
+Entered folder: UH020 
+
+ans =
+
+  logical
+
+   1
+
+[Warning: Some files might be missing from folder UH020] 
+[> In UHEALscraper_par (line 152)
+In main (line 11)] 
+Processing .xml files.
+Found 4: 
+[Warning: More than two .xml files detected!\n] 
+[> In UHEALscraper_par (line 182)
+In main (line 11)] 
+aud(Overlay 1).xml 
+aud(Overlay 2).xml 
+aud(Selected Session).xml 
+teoae.xml 
+File "aud(Overlay 1).xml" identifies itself as: AUD 
+Audiogram file. 
+Saved
+File "aud(Overlay 2).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "aud(Selected Session).xml" identifies itself as: AUD 
+[Warning: An audiogram file was already read in from this folder. Additional ones are ignored.\n] 
+[> In UHEALscraper_par (line 204)
+In main (line 11)] 
+File "teoae.xml" identifies itself as: TEOAE 
+TEOAE file.
+Saved
+Processing .xlsx files.
+Found 2: 
+NESI_UH20.xlsx 
+SSQ12_UH20.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 7: 
+Found a STIM aep data file.
+Saved
+Found a RDS data file.
+Saved
+Found a MEMR data file.
+File name indicated it is left ear data.
+Saved
+Found a MEMR data file.
+File named indicated it is right ear data.
+Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
+[Warning: tmp_ID.mat in UH020 was not identified as either a ACALOS, MEMR, RDS, or STIM data file based on contained field names. Skipped!] 
+[> In UHEALscraper_par (line 447)
+In main (line 11)] 
+Processing .dat files.
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
+Getting measurement place...
+Folder UH020 was processed.
+ The resulting data struct:
+         id: 'UH020'
+        per: [1x1 struct]
+        aud: [12x2x2 double]
+      teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
+       memr: [1x1 struct]
+     acalos: [1x1 struct]
+        rds: [1x1 struct]
+       nesi: 5.4548
+        ssq: [12x2 double]
+        tts: 5
+        eeg: {'UHEAL20_KL.bdf'}
+       stim: [1x1 struct]
+    subinfo: [1x1 struct]
+

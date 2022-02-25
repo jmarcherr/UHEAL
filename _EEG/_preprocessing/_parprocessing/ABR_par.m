@@ -1,7 +1,6 @@
 
 function ABR_par(datadir,d,dd)
 
-%rng('default'); parcreaterandstream(10, randi(10000)+dd)
 rootdir = cd;
 cd(datadir)
 cd(d(dd).name)
@@ -62,17 +61,7 @@ if ~isempty(bdf) || strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %no
         cfg.dataset = dataset;
         cfg.channel     = {'eeg','EXG1','EXG2' '-Status'};%chaoi;;%chaoi;
         cfg.reref       = 'yes';
-        % if stimear ==1
-        %     cfg.refchannel  = {'EXG1'}; %vertex electrodes%linked mastoids
-        % else
-        %     cfg.refchannel  = {'EXG2'};
-        % end
         cfg.refchannel = {'Cz','Fz','FCz'};
-        if dd == 2 % UH02 wrong recording labels
-            cfg.refchannel = {'A10','A4','A12'};
-            cfg.channel     = {'A1','A2','A3','A4','A5','A6','A7','A8','A9','A10',...
-                'A11' 'A12' 'A13' 'A14' 'A15' 'A16','EXG1','EXG2' '-Status'};
-        end
         cfg.layout      =  'biosemi64.lay';
         cfg.continuous  = 'yes';
         cfg.dftfilter   = 'yes';
@@ -96,11 +85,8 @@ if ~isempty(bdf) || strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %no
         
         % rereferenced data struct
         data = ft_preprocessing(cfg);
-        if dd==2
-            data.label = {'Fp1','F3','AFz','Fz','P9','T7','C3','FC3','C4','Cz',...
-                'P10','FCz','T8','F4','Fp2','FC4','EXG1','EXG2'};
-        end
-        %
+
+
         %     cfgd          = [];
         %     cfgd.method   = 'channel';
         %     cfgd.channel = 'all'
@@ -121,17 +107,6 @@ if ~isempty(bdf) || strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %no
         cd ..
         cd(['_EEG' filesep '_preprocdata_ABR'])
         %%  Save mat
-        %if ~exist(d(dd).name, 'dir')
-        %     mkdir(d(dd).name)
-        % %end
-        %
-        % cd(d(dd).name)
-        % if stimear ==1
-        %
-        %     savefile = [dataset(1:2) '_ABR_ltip.mat']
-        % else
-        %     savefile = [dataset(1:2) '_ABR_rtip.mat']
-        % end
         savefile = [d(dd).name '_ABR.mat'];
         
         save(savefile,'data','-v7.3');

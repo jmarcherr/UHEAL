@@ -1,0 +1,34 @@
+Warning: Valid memr data is missing from folder UH003. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH004. None was accepted and saved.
+
+Warning: Valid nesi data is missing from folder UH011. None was accepted and saved.
+
+Warning: Valid nesi data is missing from folder UH028. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH031. None was accepted and saved.
+
+Warning: Valid nesi + ssq data is missing from folder UH033. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH067. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH074. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH079. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH089. None was accepted and saved.
+
+Warning: Valid acalos data is missing from folder UH096. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH100. None was accepted and saved.
+
+Warning: Valid acalos data is missing from folder UH105. None was accepted and saved.
+
+Warning: Valid rds data is missing from folder UH106. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH107. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH109. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH114. None was accepted and saved.
+

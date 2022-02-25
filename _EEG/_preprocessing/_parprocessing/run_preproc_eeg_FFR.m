@@ -23,6 +23,6 @@ parpool(clust, 20);
 
 %%
 cd('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_preprocessing/_parprocessing')
-parfor kk = 1:length(d)
+parfor kk = 111:length(d)
     FFR_par_tips(datadir,d,kk);
 end

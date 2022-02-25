@@ -106,13 +106,13 @@ end
 
 %% Correct for AD break
 % plot both
-sub_preAD = 1:20
+sub_preAD = setdiff(1:20,2)
 plot(squeeze(nanmean(sub_corrected(sub_preAD,1,1:244-13))))
 hold on
-plot(squeeze(nanmean(sub_corrected(21:end,1,14:end))))
+plot(squeeze(nanmean(sub_corrected([2 21:end],1,14:end))))
 sub_abr = [];
-sub_abr(1:20,:,:) = sub_corrected(sub_preAD,:,1:end-13);
-sub_abr(21:size(sub_corrected,1),:,:) = sub_corrected(21:end,:,14:end);
+sub_abr(sub_preAD,:,:) = sub_corrected(sub_preAD,:,1:end-13);
+sub_abr([2 21:size(sub_corrected,1)],:,:) = sub_corrected([2 21:end],:,14:end);
 
 tn_corr = tnIDX(14:end);
 % delayed time:
@@ -134,7 +134,7 @@ missing_gender  = find(isnan(gender));
 missing_CP      = find(isnan(CP));
 
 %% visual rejection: Find artifact subjects
-for s=length(d)
+for s=1:length(d)
     close all
     fig=figure
     plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
@@ -161,8 +161,10 @@ for s=length(d)
     
 
 end
-
-% save rjt_sub
+%%
+cd('subject_ABRs')
+save('rjt_sub.mat','rjt_sub')
+cd ..
 
 %% load rjt_sub
 load('subject_ABRs/rjt_sub.mat')
@@ -177,7 +179,7 @@ for s=1:length(d)%46:length(d)
     title(['subid: ' sub_id{s}])
     grid on
     hold off
-    if isnan(sub_abr(s,1,1))
+    if isnan(sub_abr(s,1,1)) | rjt_sub(s)==1
         SP(s,:) = [nan nan];
         WIpos(s,:) = [nan nan];
         WVpos(s,:) = [nan nan];
@@ -190,6 +192,7 @@ for s=1:length(d)%46:length(d)
     end
 
 end
+
 
 %%
 close all
@@ -273,8 +276,35 @@ set(gca,'fontsize',12)
 set(gcf,'position',[441 324 867 401])
 if savefile
 fig=gcf;
-saveas(fig,"figs/abr_scatter2",'epsc')
+saveas(fig,"figs/abr_scatter3",'epsc')
 end
+
+%% save to UHEAL_Data file
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+uheal_data.SP_amp = nan(size(uheal_data.subid));
+uheal_data.SP_lat = nan(size(uheal_data.subid));
+uheal_data.AP_amp = nan(size(uheal_data.subid));
+uheal_data.AP_lat =  nan(size(uheal_data.subid));
+uheal_data.WV_amp = nan(size(uheal_data.subid));
+uheal_data.WV_lat =  nan(size(uheal_data.subid));
+%%
+for s=1:length(SP)
+    % get this subid
+    thisID = str2double(sub_id{s}(3:5))
+    this_idx = find(uheal_data.subid==thisID);
+    uheal_data.SP_amp(this_idx) = SP(s,2);
+    uheal_data.SP_lat(this_idx) = SP(s,1);
+    uheal_data.AP_amp(this_idx) = WIpos(s,2);
+    uheal_data.AP_lat(this_idx) = WIpos(s,1);
+    uheal_data.WV_amp(this_idx) = WVpos(s,2);
+    uheal_data.WV_lat(this_idx) = WVpos(s,1);
+    
+end
+
+uheal_table = struct2table(uheal_data)
+
+writetable(uheal_table,'uheal_data.csv')  
+save('uheal_data.mat','uheal_data')
 %%
 %ratios WI/WV
 close all

@@ -19,6 +19,6 @@ clust.saveProfile;
 parpool(clust, 20);
 %%
 addpath('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis')
-for kk = length(subdir)
+parfor kk = 1:length(subdir)
     ABR_analysis_par(kk,subdir,datadir,rootdir,clin_dir);
 end

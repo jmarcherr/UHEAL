@@ -1,0 +1,4245 @@
+
+                                                                              < M A T L A B (R) >
+                                                                    Copyright 1984-2020 The MathWorks, Inc.
+                                                                    R2020b (9.9.0.1467703) 64-bit (glnxa64)
+                                                                                August 26, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+ project directory now added to the current path 
+
+ directory addded to the path
+subdir = 
+
+  110x1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum
+
+Starting parallel pool (parpool) using the 'dcc' profile ...
+
+additionalSubmitArgs =
+
+    '-n 20 -q hpc -R "span[ptile=20]" -W 20:00 -R "rusage[mem=8GB]"'
+
+Connected to the parallel pool (number of workers: 20).
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 12 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH001_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {'Fp1'  'F3'  'AFz'  'Fz'  'P9'  'T7'  'C3'  'FC3'  'C4'  'Cz'  'P10'  'FCz'  'T8'  'F4'  'Fp2'  'FC4'  'EXG1'  'EXG2'}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5999x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH002_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {16x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH003_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.90 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5945 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.90 % of trials rejected! 
+2.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH004_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5997 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.05 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH005_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH006_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5998 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH007_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH008_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.98 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5940 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.98 % of trials rejected! 
+2.28 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH009_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.58 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5965 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.58 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH010_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH011_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5996 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH012_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.37 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5976 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.37 % of trials rejected! 
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH013_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.32 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5981 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.32 % of trials rejected! 
+0.18 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH014_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5987 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH015_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5934 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.07 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH016_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH017_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.30 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5981 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.30 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH018_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH019_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.82 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11993 cell}
+           trial: {1x11993 cell}
+         fsample: 16384
+      sampleinfo: [11993x2 double]
+       trialinfo: [11993x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5949 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.82 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH020_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH022_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5991 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.22 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH023_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5999x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH024_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.32 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH025_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5995 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH026_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH027_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11993 cell}
+           trial: {1x11993 cell}
+         fsample: 16384
+      sampleinfo: [11993x2 double]
+       trialinfo: [11993x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5997 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH028_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5997 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH029_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH030_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH031_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH032_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x5998 cell}
+           trial: {1x5998 cell}
+         fsample: 16384
+      sampleinfo: [5998x2 double]
+       trialinfo: [5998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5997 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH033_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.62 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11992 cell}
+           trial: {1x11992 cell}
+         fsample: 16384
+      sampleinfo: [11992x2 double]
+       trialinfo: [11992x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5837 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.62 % of trials rejected! 
+2.35 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH034_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5999 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 2 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH035_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5999 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH036_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11999 cell}
+           trial: {1x11999 cell}
+         fsample: 16384
+      sampleinfo: [11999x2 double]
+       trialinfo: [11999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5972 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.47 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH037_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11999 cell}
+           trial: {1x11999 cell}
+         fsample: 16384
+      sampleinfo: [11999x2 double]
+       trialinfo: [11999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5996 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH038_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH039_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5999x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH040_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5999x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH041_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.37 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5976 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.37 % of trials rejected! 
+0.73 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH042_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11994 cell}
+           trial: {1x11994 cell}
+         fsample: 16384
+      sampleinfo: [11994x2 double]
+       trialinfo: [11994x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5926 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.20 % of trials rejected! 
+2.18 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH043_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11992 cell}
+           trial: {1x11992 cell}
+         fsample: 16384
+      sampleinfo: [11992x2 double]
+       trialinfo: [11992x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH044_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.92 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5944 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.92 % of trials rejected! 
+1.87 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH045_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.28 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11999 cell}
+           trial: {1x11999 cell}
+         fsample: 16384
+      sampleinfo: [11999x2 double]
+       trialinfo: [11999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5983 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.28 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH046_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.73 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5956 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.73 % of trials rejected! 
+4.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH047_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.33 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11994 cell}
+           trial: {1x11994 cell}
+         fsample: 16384
+      sampleinfo: [11994x2 double]
+       trialinfo: [11994x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5978 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.33 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH048_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5998 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.08 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH049_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.45 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5913 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.45 % of trials rejected! 
+0.75 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH050_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.92 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5886 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.92 % of trials rejected! 
+4.30 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH051_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5999x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH052_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.61 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x1813 cell}
+           trial: {1x1813 cell}
+         fsample: 16384
+      sampleinfo: [1813x2 double]
+       trialinfo: [1813x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x1802 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.61 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH053_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11992 cell}
+           trial: {1x11992 cell}
+         fsample: 16384
+      sampleinfo: [11992x2 double]
+       trialinfo: [11992x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5996 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.53 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH054_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5987 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.22 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH055_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH056_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11994 cell}
+           trial: {1x11994 cell}
+         fsample: 16384
+      sampleinfo: [11994x2 double]
+       trialinfo: [11994x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.40 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH057_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH058_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5997 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.33 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH059_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH060_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH061_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5997x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH062_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.83 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x5999 cell}
+           trial: {1x5999 cell}
+         fsample: 16384
+      sampleinfo: [5999x2 double]
+       trialinfo: [5999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5949 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.83 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH063_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.82 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11999 cell}
+           trial: {1x11999 cell}
+         fsample: 16384
+      sampleinfo: [11999x2 double]
+       trialinfo: [11999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5951 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.82 % of trials rejected! 
+0.33 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH064_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12997 cell}
+           trial: {1x12997 cell}
+         fsample: 16384
+      sampleinfo: [12997x2 double]
+       trialinfo: [12997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x6483 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.25 % of trials rejected! 
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH065_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11991 cell}
+           trial: {1x11991 cell}
+         fsample: 16384
+      sampleinfo: [11991x2 double]
+       trialinfo: [11991x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5989 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH066_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11992 cell}
+           trial: {1x11992 cell}
+         fsample: 16384
+      sampleinfo: [11992x2 double]
+       trialinfo: [11992x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5988 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH068_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x5999 cell}
+           trial: {1x5999 cell}
+         fsample: 16384
+      sampleinfo: [5999x2 double]
+       trialinfo: [5999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5873 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.10 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH069_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.70 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5896 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.70 % of trials rejected! 
+5.89 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH070_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.18 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5989 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.18 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH071_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5999 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.02 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH072_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5937 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.05 % of trials rejected! 
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH073_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5991 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH074_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5991 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH075_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.23 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5986 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.23 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH076_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [0x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+NaN % of trials rejected! 
+1.80 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH077_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH078_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11999 cell}
+           trial: {1x11999 cell}
+         fsample: 16384
+      sampleinfo: [11999x2 double]
+       trialinfo: [11999x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5995 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.08 % of trials rejected! 
+0.57 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH079_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.28 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5983 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.28 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH080_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5998 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+0.37 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH081_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11993 cell}
+           trial: {1x11993 cell}
+         fsample: 16384
+      sampleinfo: [11993x2 double]
+       trialinfo: [11993x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH082_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11997 cell}
+           trial: {1x11997 cell}
+         fsample: 16384
+      sampleinfo: [11997x2 double]
+       trialinfo: [11997x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5996 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.03 % of trials rejected! 
+4.87 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH083_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.38 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5857 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+2.38 % of trials rejected! 
+7.75 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH084_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11996 cell}
+           trial: {1x11996 cell}
+         fsample: 16384
+      sampleinfo: [11996x2 double]
+       trialinfo: [11996x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5991 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH085_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11993 cell}
+           trial: {1x11993 cell}
+         fsample: 16384
+      sampleinfo: [11993x2 double]
+       trialinfo: [11993x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [5998x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+2.30 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH086_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11995 cell}
+           trial: {1x11995 cell}
+         fsample: 16384
+      sampleinfo: [11995x2 double]
+       trialinfo: [11995x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.15 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH088_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11998 cell}
+           trial: {1x11998 cell}
+         fsample: 16384
+      sampleinfo: [11998x2 double]
+       trialinfo: [11998x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH089_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x11992 cell}
+           trial: {1x11992 cell}
+         fsample: 16384
+      sampleinfo: [11992x2 double]
+       trialinfo: [11992x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5985 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+0.28 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH090_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH092_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH093_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.52 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5969 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.52 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH094_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH095_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.37 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH096_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5933 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.12 % of trials rejected! 
+0.37 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH097_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.52 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5969 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.52 % of trials rejected! 
+1.65 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH098_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.75 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5955 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.75 % of trials rejected! 
+2.58 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH101_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH102_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5996 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.07 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH103_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.17 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5930 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+1.17 % of trials rejected! 
+0.32 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH104_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5993 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.12 % of trials rejected! 
+0.18 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH105_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5994 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH106_ABR.mat processed...
+the call to "ft_selectdata" took 1 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH107_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.78 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH108_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.27 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5984 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.27 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH109_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5994 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.10 % of trials rejected! 
+0.05 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH110_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.23 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH111_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [6000x1 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.00 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH112_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5988 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.20 % of trials rejected! 
+1.10 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH113_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5992 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.13 % of trials rejected! 
+0.02 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH115_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x6000 cell}
+           trial: {1x6000 cell}
+         fsample: 16384
+      sampleinfo: [6000x2 double]
+       trialinfo: [6000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5990 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.17 % of trials rejected! 
+NaN % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH116_ABR.mat processed...
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.55 % of trials rejected! 
+
+fs =
+
+       16384
+
+[Warning: could not determine dimord of "valid_trials" in:
+
+             hdr: [1x1 struct]
+           label: {18x1 cell}
+            time: {1x12000 cell}
+           trial: {1x12000 cell}
+         fsample: 16384
+      sampleinfo: [12000x2 double]
+       trialinfo: [12000x1 double]
+             cfg: [1x1 struct]
+    valid_trials: [1x5967 double]
+
+] 
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/run_ABR_analysis_par.m',23,1)">run_ABR_analysis_par at line 23</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_analysis/par_analysis/ABR_analysis_par.m',48,1)">ABR_analysis_par at line 48</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/ft_selectdata.m',201,1)">ft_selectdata at line 201</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',572,1)">getdimord at line 572</a>
+ In <a href = "matlab: opentoline('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/fieldtrip-master/utilities/private/getdimord.m',621,1)">getdimord>warning_dimord_could_not_be_determined at line 621</a>
+
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+Epoching data
+trials done.
+0.55 % of trials rejected! 
+0.00 % of trials rejected! 
+
+fs =
+
+       16384
+
+Subject UH117_ABR.mat processed...

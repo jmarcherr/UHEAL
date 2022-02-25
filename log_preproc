@@ -3331,11 +3331,9 @@ File "UH48_aud_corrected(Selected Session).xml" identifies itself as: AUD
 Audiogram file. 
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH048
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH48.xlsx 
+SSQ12_UH48.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -3367,14 +3365,12 @@ Folder UH048 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 0.1218
+        ssq: [12x2 double]
+        tts: 1
         eeg: {'UH48_070421.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH048. None was accepted and saved.
 
 Entered folder: UH049 
 
@@ -3398,11 +3394,9 @@ File "TEOAE_UH49.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH049
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH49.xlsx 
+SSQ12_UH49.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -3434,14 +3428,12 @@ Folder UH049 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 13.0621
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH49_080421.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH049. None was accepted and saved.
 
 Entered folder: UH050 
 
@@ -4892,10 +4884,11 @@ Saved
 Found a STIM ffr data file.
 Saved
 Processing .dat files.
-Found 0: 
-[Warning: No dat files found.] 
-[> In UHEALscraper_par (line 477)
-In main (line 11)] 
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Fitting method BTUX: not enough data points in the upper loudness range. m_high was fixed to 1.53 CU/dB
+Saved
 Getting measurement place...
 Folder UH072 was processed.
  The resulting data struct:
@@ -4904,7 +4897,7 @@ Folder UH072 was processed.
         aud: [12x2x2 double]
       teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
        memr: [1x1 struct]
-     acalos: []
+     acalos: [1x1 struct]
         rds: [1x1 struct]
        nesi: 2.0944
         ssq: [12x2 double]
@@ -4912,8 +4905,6 @@ Folder UH072 was processed.
         eeg: {'UH72_250621.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid acalos data is missing from folder UH072. None was accepted and saved.
 
 Entered folder: UH073 
 
@@ -5935,7 +5926,7 @@ Folder UH088 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: 96.2316
+       nesi: 23.2282
         ssq: [12x2 double]
         tts: 3
         eeg: {'UH88_080921.bdf'}
@@ -6434,7 +6425,7 @@ Saved
 Found a STIM ffr data file.
 Saved
 Processing .dat files.
-Found 2: 
+Found 3: 
 Getting measurement place...
 Folder UH096 was processed.
  The resulting data struct:
@@ -6571,10 +6562,10 @@ Saved
 Found a RDS data file.
 Saved
 Processing .dat files.
-Found 0: 
-[Warning: No dat files found.] 
-[> In UHEALscraper_par (line 477)
-In main (line 11)] 
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
 Getting measurement place...
 Folder UH098 was processed.
  The resulting data struct:
@@ -6583,7 +6574,7 @@ Folder UH098 was processed.
         aud: [12x2x2 double]
       teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
        memr: [1x1 struct]
-     acalos: []
+     acalos: [1x1 struct]
         rds: [1x1 struct]
        nesi: 0.1684
         ssq: [12x2 double]
@@ -6591,8 +6582,6 @@ Folder UH098 was processed.
         eeg: {'UH98_251021.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid acalos data is missing from folder UH098. None was accepted and saved.
 
 Entered folder: UH099 
 
@@ -6616,28 +6605,30 @@ File "TEOAE_UH99.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH099
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
-Processing .bdf files.
-Found 0: 
-[Warning: No EEG files found!] 
-[> In UHEALscraper_par (line 311)
-In main (line 11)] 
-Processing .mat files.
 Found 2: 
+NESI_UH99.xlsx 
+SSQ12_UH99.xlsx 
+Processing .bdf files.
+Found 1: 
+Saved
+Processing .mat files.
+Found 5: 
+Found a STIM aep data file.
+Saved
 Found a RDS data file.
 Saved
 Found a MEMR data file.
 File name indicated it is left ear data.
 Saved
+Found a STIM abr data file.
+Saved
+Found a STIM ffr data file.
+Saved
 Processing .dat files.
-Found 0: 
-[Warning: No dat files found.] 
-[> In UHEALscraper_par (line 477)
-In main (line 11)] 
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
 Getting measurement place...
 Folder UH099 was processed.
  The resulting data struct:
@@ -6646,16 +6637,14 @@ Folder UH099 was processed.
         aud: [12x2x2 double]
       teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
        memr: [1x1 struct]
-     acalos: []
+     acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
-        eeg: []
+       nesi: 0.9730
+        ssq: [12x2 double]
+        tts: 1
+        eeg: {'UH99_2_100122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid acalos + nesi + ssq + eeg data is missing from folder UH099. None was accepted and saved.
 
 Entered folder: UH100 
 
@@ -6694,10 +6683,10 @@ Saved
 Found a STIM ffr data file.
 Saved
 Processing .dat files.
-Found 0: 
-[Warning: No dat files found.] 
-[> In UHEALscraper_par (line 477)
-In main (line 11)] 
+Found 2: 
+Saved
+Found an ACALOS raw data file.
+Saved
 Getting measurement place...
 Folder UH100 was processed.
  The resulting data struct:
@@ -6706,7 +6695,7 @@ Folder UH100 was processed.
         aud: [12x2x2 double]
       teoae: {[5x3x2 double]  [93x2 double]  [93x1 double]}
        memr: []
-     acalos: []
+     acalos: [1x1 struct]
         rds: [1x1 struct]
        nesi: 0.9106
         ssq: [12x2 double]
@@ -6715,7 +6704,7 @@ Folder UH100 was processed.
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid memr + acalos data is missing from folder UH100. None was accepted and saved.
+Warning: Valid memr data is missing from folder UH100. None was accepted and saved.
 
 Entered folder: UH101 
 
@@ -6739,11 +6728,9 @@ File "TEOAE_UH101.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH101
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH101.xlsx 
+SSQ12_UH101.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -6779,14 +6766,12 @@ Folder UH101 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 18.4989
+        ssq: [12x2 double]
+        tts: 3
         eeg: {'UH101_091121.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH101. None was accepted and saved.
 
 Entered folder: UH102 
 
@@ -7011,11 +6996,9 @@ File "TEOAE_UH105.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH105
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH105.xlsx 
+SSQ12_UH105.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7047,14 +7030,14 @@ Folder UH105 was processed.
        memr: [1x1 struct]
      acalos: []
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 0.6251
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH105_251121.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid acalos + nesi + ssq data is missing from folder UH105. None was accepted and saved.
+Warning: Valid acalos data is missing from folder UH105. None was accepted and saved.
 
 Entered folder: UH106 
 
@@ -7078,11 +7061,9 @@ File "TEOAE_UH106.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH106
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH106.xlsx 
+SSQ12_UH106.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7115,14 +7096,14 @@ Folder UH106 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: []
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 12.8941
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH106_291121.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid rds + nesi + ssq data is missing from folder UH106. None was accepted and saved.
+Warning: Valid rds data is missing from folder UH106. None was accepted and saved.
 
 Entered folder: UH107 
 
@@ -7146,11 +7127,9 @@ File "TEOAE_UH107.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH107
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH107.xlsx 
+SSQ12_UH107.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7179,14 +7158,14 @@ Folder UH107 was processed.
        memr: []
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 4.3382
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH107_301121.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid memr + nesi + ssq data is missing from folder UH107. None was accepted and saved.
+Warning: Valid memr data is missing from folder UH107. None was accepted and saved.
 
 Entered folder: UH108 
 
@@ -7210,11 +7189,9 @@ File "TEOAE_UH108.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH108
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH108.xlsx 
+SSQ12_UH108.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7247,14 +7224,12 @@ Folder UH108 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 1.3858
+        ssq: [12x2 double]
+        tts: 3
         eeg: {'UH108_031221.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH108. None was accepted and saved.
 
 Entered folder: UH109 
 
@@ -7278,11 +7253,9 @@ File "TEOAE_UH109.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH109
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH109.xlsx 
+SSQ12_UH109.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7312,14 +7285,14 @@ Folder UH109 was processed.
        memr: []
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 2.8249
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH109_091221.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid memr + nesi + ssq data is missing from folder UH109. None was accepted and saved.
+Warning: Valid memr data is missing from folder UH109. None was accepted and saved.
 
 Entered folder: UH110 
 
@@ -7343,11 +7316,9 @@ File "TEOAE_UH110.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH110
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH110.xlsx 
+SSQ12_UH110.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7379,14 +7350,12 @@ Folder UH110 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 6.0047
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH110_131221.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH110. None was accepted and saved.
 
 Entered folder: UH111 
 
@@ -7410,11 +7379,9 @@ File "TEOAE_UH111.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH111
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH111.xlsx 
+SSQ12_UH111.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7446,14 +7413,12 @@ Folder UH111 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 3.4487
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH111_201221.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH111. None was accepted and saved.
 
 Entered folder: UH112 
 
@@ -7477,11 +7442,9 @@ File "TEOAE_UH112.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH112
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH112.xlsx 
+SSQ12_UH112.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7517,14 +7480,12 @@ Folder UH112 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 0.7081
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH112_070122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH112. None was accepted and saved.
 
 Entered folder: UH113 
 
@@ -7548,11 +7509,9 @@ File "TEOAE_UH113.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH113
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH113.xlsx 
+SSQ12_UH113.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7584,14 +7543,12 @@ Folder UH113 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 25.3188
+        ssq: [12x2 double]
+        tts: 4
         eeg: {'UH113_190122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH113. None was accepted and saved.
 
 Entered folder: UH114 
 
@@ -7615,11 +7572,9 @@ File "TEOAE_UH114.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH114
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH114.xlsx 
+SSQ12_UH114.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7648,14 +7603,14 @@ Folder UH114 was processed.
        memr: []
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 58.7888
+        ssq: [12x2 double]
+        tts: 1
         eeg: {'UH114_200122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
 
-Warning: Valid memr + nesi + ssq data is missing from folder UH114. None was accepted and saved.
+Warning: Valid memr data is missing from folder UH114. None was accepted and saved.
 
 Entered folder: UH115 
 
@@ -7679,11 +7634,9 @@ File "TEOAE_UH115.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH115
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH115.xlsx 
+SSQ12_UH115.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7719,14 +7672,12 @@ Folder UH115 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 0.6406
+        ssq: [12x2 double]
+        tts: 3
         eeg: {'UH115_250122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH115. None was accepted and saved.
 
 Entered folder: UH116 
 
@@ -7750,11 +7701,9 @@ File "TEOAE_UH116.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH116
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH116.xlsx 
+SSQ12_UH116.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7786,14 +7735,12 @@ Folder UH116 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 2.2273
+        ssq: [12x2 double]
+        tts: 1
         eeg: {'UH116_260122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH116. None was accepted and saved.
 
 Entered folder: UH117 
 
@@ -7817,11 +7764,9 @@ File "TEOAE_UH117.xml" identifies itself as: TEOAE
 TEOAE file.
 Saved
 Processing .xlsx files.
-Found 0: 
-[Warning: No .xlsx exist in folder: UH117
-] 
-[> In UHEALscraper_par (line 271)
-In main (line 11)] 
+Found 2: 
+NESI_UH117.xlsx 
+SSQ12_UH117.xlsx 
 Processing .bdf files.
 Found 1: 
 Saved
@@ -7854,13 +7799,11 @@ Folder UH117 was processed.
        memr: [1x1 struct]
      acalos: [1x1 struct]
         rds: [1x1 struct]
-       nesi: []
-        ssq: []
-        tts: []
+       nesi: 3.4352
+        ssq: [12x2 double]
+        tts: 3
         eeg: {'UH117_280122.bdf'}
        stim: [1x1 struct]
     subinfo: [1x1 struct]
-
-Warning: Valid nesi + ssq data is missing from folder UH117. None was accepted and saved.
 
 Scraping complete!

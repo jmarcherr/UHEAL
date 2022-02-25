@@ -1,0 +1,15 @@
+Warning: Valid memr data is missing from folder UH003. None was accepted and saved.
+
+Warning: Valid memr data is missing from folder UH004. None was accepted and saved.
+
+Warning: Valid nesi data is missing from folder UH011. None was accepted and saved.
+
+{Error using cd
+Cannot CD to /work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/UH021 (Name is nonexistent or not a directory).
+
+Error in UHEALscraper_par (line 114)
+    cd(sfol(i).name)%enter each folder
+
+Error in main (line 11)
+UHEALscraper_par(datafol_remote)
+} 

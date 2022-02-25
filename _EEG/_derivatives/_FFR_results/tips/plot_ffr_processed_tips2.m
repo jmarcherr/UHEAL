@@ -17,8 +17,10 @@ for s=1:length(subs)
     load(subs(s).name)
     clc
     disp(['sub ' subs(s).name(1:5) ' loaded...'])
+    sub_id{s} = subs(s).name(1:5);
     % get FFR
     if isfield(data_ffr,'FFR')
+
         FFR{s} = data_ffr.FFR;
         FFR_SNR{s} = data_ffr.FFR_SNR;
         F{s} = data_ffr.F;
@@ -113,7 +115,28 @@ for s=1:length(TS)
     
 end
 
+%% save to UHEAL_data
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+uheal_data.FFR_SNR = nan(size(uheal_data.subid));
+uheal_data.FFR_sig = nan(size(uheal_data.subid));
 
+%%
+for s=1:length(SNR_sub)
+    % get this subid
+    thisID = str2double(sub_id{s}(3:5))
+    this_idx = find(uheal_data.subid==thisID);
+    
+    uheal_data.FFR_SNR(this_idx) = SNR_sub(s,10);
+    uheal_data.FFR_sig(this_idx) = sig_idx(s,10);
+end
+thisdir = cd;
+cd('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/')
+uheal_table = struct2table(uheal_data)
+
+%writetable(uheal_table,'uheal_data.csv')  
+%save('uheal_data.mat','uheal_data')
+
+cd(thisdir)
 %% plotting F stats
 close all
 subplot(2,2,[1 2])
@@ -320,7 +343,7 @@ saveas(fig,'figs2/freq_yvso','epsc')
 
 %% age vs. FFR
 close all
-this_idx = find(sig_idx(:,10));
+this_idx = NH_idx%find(sig_idx(:,10));
 non_idx = find(sig_idx(:,10)==0);
 scatter(age(this_idx),db(FFR_sub(this_idx,10)),'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
 set(gca,'fontsize',12)
@@ -339,27 +362,27 @@ saveas(fig,'figs2/age_corr_ffr','epsc')
 %% F-stat corr
 
 close all
-this_idx = find(sig_idx(:,10));
+this_idx = find(sig_idx(:,10))';
 non_idx = find(sig_idx(:,10)==0);
-scatter(age(this_idx),F_sub(this_idx,10),'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
+scatter(age(this_idx),db(F_sub(this_idx,10)),'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
 set(gca,'fontsize',12)
 ll=lsline
 set(ll,'linewidth',2,'color','k')
 hold on
-scatter(age(non_idx),F_sub(non_idx,10),'r+')
-ylabel('F-Statistic')
+scatter(age(non_idx),db(F_sub(non_idx,10)),'r+')
+ylabel('F-Statistic dB')
 
 xlabel('Age')
 set(gcf,'Position',[228 420 280 209]);
-plot([10 80], F_crit{1}(:,1:2),'k--')
-[rho,pval]=corr(age(NH_idx)',db(F_sub(NH_idx))')
+plot([10 80], db(F_crit{1}(:,1:2)),'k--')
+[rho,pval]=corr(age(this_idx)',db(F_sub(this_idx))')
 fig = gcf;
 saveas(fig,'figs2/age_corr_f','epsc')
 
 %% SNR corr
 
 close all
-this_idx = find(sig_idx(:,10));
+this_idx = NH_idx%find(sig_idx(:,10)==1)% & CP==0);
 non_idx = find(sig_idx(:,10)==0);
 scatter(age(this_idx),SNR_sub(this_idx,10),'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
 set(gca,'fontsize',12)
@@ -372,7 +395,7 @@ ylabel('SNR (dB)')
 xlabel('Age')
 set(gcf,'Position',[228 420 280 209]);
 plot([10 80], db(F_crit{1}(:,1:2)),'k--')
-[rho,pval]=corr(age(NH_idx)',db(SNR_sub(NH_idx))')
+[rho,pval]=corr(age(NH_idx)',SNR_sub(NH_idx)')
 fig = gcf;
 saveas(fig,'figs2/age_corr_snr','epsc')
 
@@ -418,7 +441,7 @@ saveas(fig,'figs2/freq_yvso_corrected','epsc')
 %% FFR corrected
 
 close all
-this_idx = find((sig_idx(:,10)' & ~isnan(age)));
+this_idx = NH_idx%find((sig_idx(:,10)' & ~isnan(age)));
 non_idx = find(sig_idx(:,10)==0);
 scatter(age(this_idx),db(FFR_c(this_idx)),'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k')
 set(gca,'fontsize',12)
