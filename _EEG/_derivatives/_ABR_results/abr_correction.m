@@ -21,6 +21,8 @@ for s=1:length(d)%[26,11,28,61]%
     %cd(clin_dir);
     %load([d(s).name(1:5) '.mat']);
     subinfo = data_abr.subinfo;
+%     nr_reject(s,:) = data_abr.nr_reject;
+%     valid_trials(s,:) = [size(data_abr.trials{1},2) size(data_abr.trials{2},2)];
     %cd(this_dir);
     % get age
     if isempty(subinfo.age)
@@ -51,12 +53,33 @@ for s=1:length(d)%[26,11,28,61]%
     end
     
     % get nr. og trials
-    n_trials(s,1) = size(data_abr.trials{1},2);
-    n_trials(s,2) = size(data_abr.trials{2},2);
+    % 9Hz
+    for ii=1:2
+    if size(data_abr.trials{ii},2)<1000
+    n_trials(s,ii) = nan;%size(data_abr.trials{1},2);       
+    else
+    n_trials(s,ii) = size(data_abr.trials{ii},2);
+    end
+    end
+        
     % get rejected
-    nr_reject(s) = data_abr.nr_reject(1);
+    nr_reject(s,:) = data_abr.nr_reject;
     
     cd(this_dir)
+    %%
+    clc
+    disp(['9 Hz: avg nr trials, ' num2str(floor(nanmean(n_trials(:,1)))) ,...
+        ' +/- ' num2str(nanstd(n_trials(:,1)))])
+    disp(['40 Hz: avg nr trials, ' num2str(floor(nanmean(n_trials(:,2)))),...
+        '+/- ' num2str(nanstd(n_trials(:,2)))])
+    disp(['9 Hz: avg % reject, ' num2str((nanmean(nr_reject(:,1)))) ,...
+        ' +/- ' num2str(nanstd(nr_reject(:,1)))])
+    disp(['40 Hz: avg % reject, ' num2str((nanmean(nr_reject(:,2)))),...
+        '+/- ' num2str(nanstd(nr_reject(:,2)))])
+    
+    % participants without abr
+    disp([num2str(length(find(isnan(n_trials(:,1))))) ' subjects missing 9 Hz'])
+    disp([num2str(length(find(isnan(n_trials(:,2))))) ' subjects missing 40 Hz'])
     %% Baseline correction
     %loop over rates (9,40)
     for kk=ccc
@@ -106,7 +129,7 @@ end
 
 %% Correct for AD break
 % plot both
-sub_preAD = setdiff(1:20,2)
+sub_preAD = setdiff(1:20,2) % UH002 re-recorded
 plot(squeeze(nanmean(sub_corrected(sub_preAD,1,1:244-13))))
 hold on
 plot(squeeze(nanmean(sub_corrected([2 21:end],1,14:end))))
@@ -134,65 +157,86 @@ missing_gender  = find(isnan(gender));
 missing_CP      = find(isnan(CP));
 
 %% visual rejection: Find artifact subjects
-for s=1:length(d)
-    close all
-    fig=figure
-    plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
-    hold on
-    plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
-    xlabel('Time [s]')
-    ylabel('Amplitude [\muV]')
-    xlim([-2e-3 8e-3])
-    grid on
-    title(['subid: ' sub_id{s}])
-    % key press for reject, click for keep
-    keydown = waitforbuttonpress;
-    if (keydown == 0)
-        disp('Mouse button was pressed');
-        disp('reject')
-        rjt_sub(s) = 1;
-    else
-        disp('Key was pressed');
-        rjt_sub(s) = 0;
+reject_vis = 0;
+if reject_vis
+    for s=1:length(d)
+        close all
+        fig=figure
+        plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
+        hold on
+        plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
+        xlabel('Time [s]')
+        ylabel('Amplitude [\muV]')
+        xlim([-2e-3 8e-3])
+        grid on
+        title(['subid: ' sub_id{s}])
+        % key press for reject, click for keep
+        keydown = waitforbuttonpress;
+        if (keydown == 0)
+            disp('Mouse button was pressed');
+            disp('reject')
+            rjt_sub(s) = 1;
+        else
+            disp('Key was pressed');
+            rjt_sub(s) = 0;
+        end
+        %pause()
+        savefile = [sub_id{s}];
+        saveas(fig,['subject_ABRs' filesep savefile],'epsc')
+        
+        
     end
-    %pause()
-    savefile = [sub_id{s}];
-    saveas(fig,['subject_ABRs' filesep savefile],'epsc')
+    %%
+    cd('subject_ABRs')
+    save('rjt_sub.mat','rjt_sub')
+    cd ..
+else
     
-
+    %% load rjt_sub
+    load('subject_ABRs/rjt_sub.mat')
 end
-%%
-cd('subject_ABRs')
-save('rjt_sub.mat','rjt_sub')
-cd ..
 
-%% load rjt_sub
-load('subject_ABRs/rjt_sub.mat')
+
 %% peak detect
 close all
-for s=1:length(d)%46:length(d)
-    
-    plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
-    hold on
-    plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
-    xlim([-2e-3 8e-3])
-    title(['subid: ' sub_id{s}])
-    grid on
-    hold off
-    if isnan(sub_abr(s,1,1)) | rjt_sub(s)==1
-        SP(s,:) = [nan nan];
-        WIpos(s,:) = [nan nan];
-        WVpos(s,:) = [nan nan];
-    else
-         [SP(s,:)]=getABRwaves(gcf,'SP');
-         [WIpos(s,:)]=getABRwaves(gcf,'Wave I pos');
-         %[WIneg(kk,:)]=getABRwaves(gcf,'Wave I neg');
-         [WVpos(s,:)]=getABRwaves(gcf,'Wave V pos');
-         %[WVneg(kk,:)]=getABRwaves(gcf,'Wave V neg');
+peakd=1;
+if peakd
+        load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
+    for s=1:length(d)%46:length(d)
+        
+        plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
+        hold on
+        plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
+        xlim([-2e-3 8e-3])
+        title(['subid: ' sub_id{s}])
+        grid on
+        hold off
+        if isnan(sub_abr(s,1,1)) | rjt_sub(s)==1
+            SP(s,:) = [nan nan];
+            WIneg(s,:) = [nan nan];
+            WIpos(s,:) = [nan nan];
+            WVneg(s,:) = [nan nan];
+            WVpos(s,:) = [nan nan];
+        else
+            %[SP(s,:)]=getABRwaves(gcf,'SP');
+            %[WIpos(s,:)]=getABRwaves(gcf,'Wave I pos');
+            [WIneg(kk,:)]=getABRwaves(gcf,'Wave I neg');
+            %[WVpos(s,:)]=getABRwaves(gcf,'Wave V pos');
+            [WVneg(kk,:)]=getABRwaves(gcf,'Wave V neg');
+        end
+        
     end
-
+    %%
+    cd('peaks')
+    mkdir(date)
+    cd(date)
+    save('WVpos.mat','WVpos');save('WIpos.mat','WIpos');save('SP.mat','SP');save('WIneg.mat','WIneg');save('WVneg.mat','WVneg');
+    cd ..
+    cd ..
+    %%
+else
+    load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
 end
-
 
 %%
 close all
@@ -201,9 +245,9 @@ savefile = 1;
 cm = cbrewer('qual','Set1',10)
 cmap = cm([1 2 10],:);
 
-load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
+%load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
 NH_idx = find(CP==0);NH_idx(end)=[];
-NH_idx = setdiff(NH_idx,[rjt_sub,missing_abr]);
+NH_idx = setdiff(NH_idx,[find(rjt_sub),missing_abr]);
 figure('Renderer','painter')
 subplot(1,3,1)
 splot(1)=scatter(SP(NH_idx,1),SP(NH_idx,2),'o',...
@@ -315,7 +359,9 @@ scatter(age(idx),IVratio(idx))
 lsline
 % ratio SP/AP
 figure
-scatter(age,SP(:,2)./WIpos(:,2))
+spapratio = SP(:,2)./WIpos(:,2)
+idx = find(spapratio<1 & spapratio>0);
+scatter(age(idx),SP(idx,2)./WIpos(idx,2))
 lsline
 %lsline
 %ylim([-1 1])

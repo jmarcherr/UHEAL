@@ -69,17 +69,6 @@ if ~isempty(bdf) %|| strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %n
         else
             cfg.refchannel  = {'EXG2'};
         end
-        %cfg.refchannel = {'Cz'};
-        if dd == 2 % UH02 wrong recording labels
-            if stimear ==1
-                cfg.refchannel  = {'EXG1'}; %vertex electrodes%linked mastoids
-            else
-                cfg.refchannel  = {'EXG2'};
-            end
-            
-            cfg.channel     = {'A1','A2','A3','A4','A5','A6','A7','A8','A9','A10',...
-                'A11' 'A12' 'A13' 'A14' 'A15' 'A16','EXG1','EXG2' '-Status'};
-        end
         cfg.layout      =  'biosemi64.lay';
         cfg.continuous  = 'yes';
         cfg.dftfilter   = 'yes';

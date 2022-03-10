@@ -179,18 +179,15 @@ scatter(age,...
     mean(itpc_sub(:,chans,find(fft_freq(1,:)==fid(1))),2)',...
     'o','markerfacecolor',[0.6 0.6 0.6],'MarkerEdgecolor','k');
 set(gca,'fontsize',12)
-title(['8/2 Hz'])
+title(['8/2 Hz ratio'])
 ll=lsline
 set(ll,'linewidth',2,'color','k')
 ylabel('ITPC ratio')
-xlabel('Age')
+xlabel('age)
 %ylim([0 .8])
 ratio = mean(itpc_sub(:,chans,find(fft_freq(1,:)==fid(end))),2)'./...
     mean(itpc_sub(:,chans,find(fft_freq(1,:)==fid(1))),2)'
-[rh,pva]=corr(age',ratio')
-set(gcf,'position',[441 162 214 197])
-fig = gcf;
-saveas(fig,'figs/age_itpc_ratio','epsc')
+[rh,pva]=corr(age,ratio)
 %%
 function c=jm_topoplot(var1,zlim,tit_string,coff)
 load('/work1/jonmarc/UHEAL_master/UHEAL/_EEG/_func/topo_default.mat');

@@ -11,6 +11,8 @@ cd(thisdir)
 
 thisdir = cd;
 subs = dir('UH*');
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat');
+
 %% get data
 for s=1:length(subs)
     
@@ -18,6 +20,7 @@ for s=1:length(subs)
     clc
     disp(['sub ' subs(s).name(1:5) ' loaded...'])
     sub_id{s} = subs(s).name(1:5);
+    sub_num(s) = str2num(subs(s).name(3:5));
     % get FFR
     if isfield(data_ffr,'FFR')
 
@@ -53,7 +56,8 @@ for s=1:length(subs)
         else
             lab(s) = nan;
         end
-        CP(s) =  data_ffr.subinfo.CP;
+        %CP(s) =  data_ffr.subinfo.CP;
+        CP(s) = uheal_data.CP_new(find(uheal_data.subid==sub_num(s)));
         HV(s) = data_ffr.subinfo.HV;
         rjt_trials{s} = data_ffr.rjt_trials;
         nr_reject(s) =data_ffr.nr_reject;
@@ -83,6 +87,7 @@ for s=1:length(F)
         end
     end
 end
+
 YNH_idx =find((CP==0 & ~isnan(age) & age<23 & sig_idx(:,10)'==1));
 ONH_idx = find((CP==0 & ~isnan(age) & age>45) & sig_idx(:,10)'==1);
 NH_idx = find(CP==0 & ~isnan(age) & sig_idx(:,10)'==1);
@@ -116,9 +121,9 @@ for s=1:length(TS)
 end
 
 %% save to UHEAL_data
-load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
-uheal_data.FFR_SNR = nan(size(uheal_data.subid));
-uheal_data.FFR_sig = nan(size(uheal_data.subid));
+%load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+%uheal_data.FFR_SNR = nan(size(uheal_data.subid));
+%uheal_data.FFR_sig = nan(size(uheal_data.subid));
 
 %%
 for s=1:length(SNR_sub)
@@ -133,8 +138,8 @@ thisdir = cd;
 cd('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/')
 uheal_table = struct2table(uheal_data)
 
-writetable(uheal_table,'uheal_data.csv')  
-save('uheal_data.mat','uheal_data')
+%writetable(uheal_table,'uheal_data.csv')  
+%save('uheal_data.mat','uheal_data')
 
 cd(thisdir)
 %% plotting F stats
@@ -172,7 +177,7 @@ c.Label.String = 'F-stat';
 
 set(gcf,'position',[441 318 560 420])
 fig = gcf;
-saveas(fig,'figs2/F_yvo','epsc')
+%saveas(fig,'figs2/F_yvo','epsc')
 %% plotting FFR amp
 close all
 subplot(2,2,[1 2])
@@ -240,50 +245,68 @@ set(gcf,'position',[441 318 560 420])
 fig = gcf;
 saveas(fig,'figs2/snr_yvo','epsc')
 
-%% Bars F stat
-YNH_non =find((CP==0 & ~isnan(age) & age<23 & sig_idx(:,10)'==0));
-ONH_non = find((CP==0 & ~isnan(age) & age>45 & sig_idx(:,10)'==0));
+%% 3 groups
+YNH_idx =find((CP==0 & ~isnan(age) & age<=25 & sig_idx(:,10)'==1));
+MNH_idx = find((CP==0 & ~isnan(age) & age>25 & age<60) & sig_idx(:,10)'==1);
+ONH_idx = find((CP==0 & ~isnan(age) & age>60) & sig_idx(:,10)'==1);
+NH_idx = find(CP==0 & ~isnan(age) & sig_idx(:,10)'==1);
+cm = cbrewer('qual','Set1',10)
+cmap = cm([1 2 10],:);
 close all
-bar(1:2,[nanmean(F_sub(YNH_idx,10))' nanmean(F_sub(ONH_idx,10))'],'FaceColor',[0.6 0.6 0.6])
+figure('renderer','painter')
+%subplot(2,3,[1 3])
+
+%Young
+shadedErrorBar(1:16,nanmean(SNR_sub(YNH_idx,:)),nanstd(SNR_sub(YNH_idx,:))/sqrt(length(YNH_idx)),'lineprops',{'color',cmap(3,:)},'transparent',0);
 hold on
-scatter(ones(size(YNH_idx)),F_sub(YNH_idx,10),'sizedata',85,'XJitter','rand','XJitterwidth',0.2,'marker','.','MarkerEdgeColor','k','MarkerFaceColor','k','markerfacealpha',0.5)
-scatter(ones(size(ONH_idx))*2,F_sub(ONH_idx,10),'sizedata',85,'XJitter','rand','XJitterwidth',0.2,'marker','.','MarkerEdgeColor','r','MarkerFaceColor','r','markerfacealpha',0.5)
-scatter(ones(size(YNH_non)),F_sub(YNH_non,10),'k+')
-scatter(ones(size(ONH_non))*2,F_sub(ONH_non,10),'r+')
-plot([0 3],[F_crit{1}(1:2)],'k--')
+py=plot(1:16,nanmean(SNR_sub(YNH_idx,:)),'color',cmap(3,:))
+% old
+shadedErrorBar(1:16,nanmean(SNR_sub(MNH_idx,:)),nanstd(SNR_sub(MNH_idx,:))/sqrt(length(MNH_idx)),'lineprops',{'color',cmap(2,:)},'transparent',0);
+pm=plot(1:16,nanmean(SNR_sub(MNH_idx,:)),'color',cmap(2,:))
+shadedErrorBar(1:16,nanmean(SNR_sub(ONH_idx,:)),nanstd(SNR_sub(ONH_idx,:))/sqrt(length(ONH_idx)),'lineprops',{'color',cmap(1,:)},'transparent',0);
+po=plot(1:16,nanmean(SNR_sub(ONH_idx,:)),'color',cmap(1,:))
+%fcrit=plot(1:16,F_crit{1}(1:16),'k--')
 
-set(gca,'xtick',[1 2],'xticklabel',{'YNH','ONH'},'fontsize',14)
-box off
-ylabel('F-Statistic (Cz)')
-set(gcf,'position',[441 502 270 223])
+set(gca,'xtick',1:16,'xticklabel',chan_labels{1}(1:16),'fontsize',14)
+%xtickangle(45)
+hleg = legend([py, pm, po],'Young','Middle-aged','Older');
+hleg.Box = 'off'
+hleg.Position = [0.4465 0.2512 0.1940 0.2347];
+xlabel('Channel')
+ylabel('SNR (dB)')
+set(gcf,'position',[258 425 799 277])
 fig = gcf;
-saveas(fig,'figs2/f_bar','epsc')
+saveas(fig,'figs2/snr_YMO_chans','epsc')
+%ylim([4 16.5])
+%ylim([2 18])
+%%
+figure('renderer','painter')
+subplot(3,2,1)
+zlim = [25 45];
+c=jm_topoplot(nanmean(SNR_sub(YNH_idx,:))',zlim,'Young');
+c.Label.String = 'SNR (dB)';
+c.FontSize = 10;
+subplot(3,2,3)
+c=jm_topoplot(nanmean(SNR_sub(MNH_idx,:))',zlim,'Middle-aged');
+c.Label.String = 'SNR (dB)';
+c.FontSize = 10;
+subplot(3,2,5)
+c=jm_topoplot(nanmean(SNR_sub(ONH_idx,:))',zlim,'Older');
+c.Label.String = 'SNR (dB)';
+c.FontSize = 10;
 
-%% bar amp
-%% Bars F stat
-YNH_non =find((CP==0 & ~isnan(age) & age<23 & sig_idx(:,10)'==0));
-ONH_non = find((CP==0 & ~isnan(age) & age>45 & sig_idx(:,10)'==0));
-close all
-bar(1:2,[nanmean(db(FFR_sub(YNH_idx,10)))' nanmean(db(FFR_sub(ONH_idx,10)))'],'FaceColor',[0.6 0.6 0.6])
-hold on
-scatter(ones(size(YNH_idx)),db(FFR_sub(YNH_idx,10)),'sizedata',85,'XJitter','rand','XJitterwidth',0.2,'marker','.','MarkerEdgeColor','k','MarkerFaceColor','k','markerfacealpha',0.5)
-scatter(ones(size(ONH_idx))*2,db(FFR_sub(ONH_idx,10)),'sizedata',85,'XJitter','rand','XJitterwidth',0.2,'marker','.','MarkerEdgeColor','r','MarkerFaceColor','r','markerfacealpha',0.5)
-scatter(ones(size(YNH_non)),db(FFR_sub(YNH_non,10)),'k+')
-scatter(ones(size(ONH_non))*2,db(FFR_sub(ONH_non,10)),'r+')
-%plot([0 3],[F_crit{1}(1:2)],'k--')
-
-set(gca,'xtick',[1 2],'xticklabel',{'YNH','ONH'},'fontsize',14)
-box off
-ylabel('FFR amplitude (Cz)')
-set(gcf,'position',[441 502 270 223])
+set(gcf,'position',[441 318 560 420])
 fig = gcf;
-saveas(fig,'figs2/amp_bar','epsc')
+saveas(fig,'figs2/snr_YMO_top','epsc')
+
 
 %% time series
 %%
 close all
+figure('renderer','painter');
 % filter for visualization
 y_ts = squeeze(nanmean(TS_sub(YNH_idx,10,:)));
+m_ts = squeeze(nanmean(TS_sub(MNH_idx,10,:)));
 o_ts = squeeze(nanmean(TS_sub(ONH_idx,10,:)));
 ts_all = squeeze(nanmean(TS_sub(find(sig_idx(:,10)),10,:)));
 
@@ -293,24 +316,28 @@ filt_def = designfilt('bandpassfir','FilterOrder',40, ...
     'CutoffFrequency1',filt_coef(1),'CutoffFrequency2',filt_coef(2), ...
     'SampleRate',fs);
 y_ts =filtfilt(filt_def,y_ts);
+m_ts = filtfilt(filt_def,m_ts);
 o_ts = filtfilt(filt_def,o_ts);
 ts_all = filtfilt(filt_def,ts_all);
 t = time(find(time>=0));
-plot(t,y_ts','k')
+plot(t,y_ts','color','k');
 hold on
-plot(t,o_ts','r')
+plot(t,m_ts','color',cmap(2,:));
+plot(t,o_ts','color',cmap(1,:));
 box off
-hleg = legend('YNH','ONH')
+hleg = legend('Young','Middle-aged','Older')
 hleg.Box = 'off';
+hleg.Position = [0.5518 0.6662 0.4607 0.3260];
 xlabel('Time [s]');
-ylabel('mV');set(gca,'fontsize',16)
-set(gcf,'position',[441 498 560 227])
+ylabel('mV');set(gca,'fontsize',14)
+set(gcf,'position',[441 475 369 227])
 ylim([-0.15 0.15])
+xlim([0 0.5])
 title('')
 fig = gcf;
-saveas(fig,'figs2/ts_yvso','epsc')
+saveas(fig,'figs2/ts_ymo','epsc')
 
-
+%%
 % all
 
 figure
@@ -325,20 +352,21 @@ title(['all sig. n= ' num2str(length(find(sig_idx(:,10))))])
 fig = gcf;
 saveas(fig,'figs2/ts_all','epsc')
 %% plotting spectra
-figure
+figure('renderer','painter')
 plot(fft_freq(1,:),squeeze(nanmean((db(fft_sub(YNH_idx,10,:))))),'k')
 hold on
-plot(fft_freq(1,:),squeeze(nanmean(db(fft_sub(ONH_idx,10,:)))),'r')
+plot(fft_freq(1,:),squeeze(nanmean(db(fft_sub(MNH_idx,10,:)))),'color',cmap(2,:))
+plot(fft_freq(1,:),squeeze(nanmean(db(fft_sub(ONH_idx,10,:)))),'color',cmap(1,:))
 %ylim([-110 -50])
-xlim([250 450])
+xlim([100 2000])
 box off
-hleg = legend('YNH','ONH')
+hleg = legend('Young','Middle-aged','Older')
 hleg.Box = 'off';
 xlabel('Frequency [Hz]');
 ylabel('db mV');set(gca,'fontsize',16)
 set(gcf,'position',[441 498 560 227])
 fig = gcf;
-saveas(fig,'figs2/freq_yvso','epsc')
+saveas(fig,'figs2/freq_ymo','epsc')
 
 
 %% age vs. FFR

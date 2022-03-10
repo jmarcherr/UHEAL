@@ -24,8 +24,8 @@ end
 %init
 ages = [18 77];
 colormap
-cmap = flip(cbrewer('div','RdYlBu',max(ages)-17));
-cmap(find(cmap>1))=1;
+cmap = cbrewer('seq','YlGnBu',max(ages)-17);
+cmap(find(cmap>1))=1;cmap(find(cmap<0))=0;
 ageidx = linspace(min(ages),max(ages),size(cmap,1));
 
 close all
@@ -58,7 +58,7 @@ title(['all, n=' num2str(length(idx))])
 saveas(fig,'figs/audiogram_all','epsc')
 %% only NH
 close all
-NH_idx = find(CP_sub==0);
+NH_idx = setdiff(find(CP_sub==0));
 fig = plot_audiogram_groups(NH_idx,age_sub,aud,aud_freq,cmap)
 % save figure
 title(['NH, n=' num2str(length(NH_idx))])
@@ -74,21 +74,70 @@ title(['HI, n=' num2str(length(HI_idx))])
 saveas(fig,'figs/audiograms_HI','epsc')
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% age plots
+%% age plots (only NH)
 % all
 close all
-hist(age_sub,max(age_sub)-min(age_sub))
-xlabel('Age (years)')
-ylabel('nr. of participants')
+figure('renderer','painter')
+[N,X]=hist(age_sub(NH_idx),max(age_sub(NH_idx))-min(age_sub(NH_idx)))
+Bh = bar(X,N,'facecolor',[0.5 0.5 0.5],'EdgeColor', [0.5 0.5 0.5],'BarWidth',0.5);
+xlabel('Age')
+ylabel('n')
+ax = ancestor(gca, 'axes');
+xrule = ax.XAxis;
+
 hold on
+
 plot([25 25],[0 8],'k--')
 plot([60 60],[0 8],'k--')
 set(gca,'fontsize',16)
 xlim([16 70])
-set(gcf,'position',[305 412 432 299])
+xrule.FontSize = 14;
+%set(gcf,'position',[305 412 432 299])
+set(gcf,'position',[305 403 191 299])
+box off
 %title(['all, n=' num2str(length(idx))])
 fig= gcf
 saveas(fig,'figs/age_hist_all','epsc')
+
+%%
+%% age plots sex divded (only NH)
+% all
+close all
+figure('renderer','painter')
+maleidx = find(gender_sub==2 & CP_sub==0);
+femaleidx =find(gender_sub==1 & CP_sub==0);
+
+[N,X]=hist(age_sub(maleidx),6);
+[Nf,Xf] = hist(age_sub(femaleidx),6)%max(age_sub(NH_idx))-min(age_sub(NH_idx)));
+%Bh = bar([Xf],[Nf;N],'facecolor',[0.8 0.5 0.5],'EdgeColor', [0.8 0.5 0.5],'BarWidth',0.5);
+%hold on
+Bh = bar([Xf],[N;Nf],'stacked','BarWidth',.8);
+Bh(1).FaceColor = [0.5 0.5 0.5];Bh(1).EdgeColor = [0.5 0.5 0.5];
+Bh(2).FaceColor = [0.8 0.5 0.5];Bh(2).EdgeColor = [0.8 0.5 0.5];
+xlabel('Age')
+ylabel('n')
+ax = ancestor(gca, 'axes');
+xrule = ax.XAxis;
+
+hold on
+
+%plot([25 25],[0 8],'k--')
+%plot([60 60],[0 8],'k--')
+set(gca,'fontsize',16)
+xlim([16 70])
+xrule.FontSize = 14;
+%set(gcf,'position',[305 412 432 299])
+set(gcf,'position',[305 403 191 299])
+hleg = legend('Male','Female');
+hleg.FontSize = 10;
+hleg.Box = 'off';
+hleg.Position = [0.4634    0.7620    0.5236    0.1288];
+box off
+%title(['all, n=' num2str(length(idx))])
+fig= gcf
+saveas(fig,'figs/age_hist_male_female','epsc')
+
+
 %% grouped male female
 figure(3)
 Y   = gender_sub(find(age_sub<=25)); 
@@ -307,49 +356,102 @@ close all
 % valid measurements
 figure('Renderer','painter')
 idx = find(~isnan(teoae_sub_amp(:,1,1,1)));
-bar(squeeze(nanmean(teoae_sub_amp(idx,:,1),1)))
+bar(squeeze(nanmean(teoae_sub_amp(idx,:,1),1)),'FaceColor',[0.5 0.5 0.5],'EdgeColor',[0.5 0.5 0.5])
 hold on
 sig = zeros(size(teoae_sub_amp(idx,:,:,:),1),5);
 for s=1:size(teoae_sub_amp(idx,:,:,:),1)
     jit_s = randn*0.1;
     for kk=1:5
         if teoae_sub_amp(idx(s),kk,3)
-            p_sig=plot(kk+jit_s,squeeze(teoae_sub_amp(idx(s),kk,1)),'k+')
+            p_sig=plot(kk+jit_s,squeeze(teoae_sub_amp(idx(s),kk,1)),'o',...
+                'color',cmap(age_sub(s)-17,:),'markerfacecolor',cmap(age_sub(s)-17,:),...
+                'markersize',4)
             sig(s,kk)=1;
         else
-            p_nonsig=plot(kk+jit_s,squeeze(teoae_sub_amp(idx(s),kk,1)),'ko')
+            p_nonsig=plot(kk+jit_s,squeeze(teoae_sub_amp(idx(s),kk,1)),'+',...
+                'color',cmap(age_sub(s)-17,:),'markersize',4)
         end
     end
+end
+        
+nf=errorbar(1:5,nanmean(teoae_sub_amp(:,:,2),1),nanstd(teoae_sub_amp(:,:,2),1)/sqrt((length(idx))),'r')
+%ylim([-35 30])
+
+% %significant
+for kk=1:5
+    this_sig = length(find(sig(:,kk)))/size(sig,1);
+    text(kk-0.1,27,[num2str(round(this_sig,2)*100) '%'])
+end
+set(gca,'fontsize',16)
+
+hleg = legend([p_sig,p_nonsig,nf],{'Significant','N.S','Noise Floor'})
+hleg.Position = [0.2044    0.2280    0.3013    0.1829];
+hleg.Box = 'off';
+hleg.FontSize = 12;
+
+ylabel('Amplitude (dB SPL)')
+xlabel('Frequency bands (+/- .5 kHz)')
+set(gcf,'Position',[441 386 468 339])
+box off
+fig= gcf
+saveas(fig,'figs/teoae_overview','epsc')
+
+%% alternative
+close all
+ages = [18 77];
+colormap
+cmap = cbrewer('seq','YlGnBu',max(ages)-17);
+cmap(find(cmap>1))=1;cmap(find(cmap<0))=0;
+ageidx = linspace(min(ages),max(ages),size(cmap,1));
+% valid measurements
+figure('Renderer','painter')
+idx = find(~isnan(teoae_sub_amp(:,1,1,1)) & CP_sub==0);
+bar(squeeze(nanmean(teoae_sub_amp(idx,:,1),1)),'FaceColor',[0.5 0.5 0.5],'EdgeColor',[0.5 0.5 0.5])
+hold on
+sig = zeros(size(teoae_sub_amp(idx,:,:,:),1),5);
+for s=1:size(teoae_sub_amp(idx,:,:,:),1)
+    jit_s = randn*0.1;
+    %for kk=1:5
+        %if teoae_sub_amp(idx(s),kk,3)
+            p_sig=plot(1:5,squeeze(teoae_sub_amp(idx(s),:,1)),'color',[cmap(age_sub(s)-17,:)])
+            sig(s,kk)=1;
+        %else
+            %p_nonsig=plot(kk+jit_s,squeeze(teoae_sub_amp(idx(s),kk,1)),'ko')
+        %end
+    %end
 end
         
 nf=errorbar(1:5,nanmean(teoae_sub_amp(:,:,2),1),nanstd(teoae_sub_amp(:,:,2),1)/sqrt((length(idx))),'r')
 ylim([-35 30])
 
 % %significant
-for kk=1:5
-    this_sig = length(find(sig(:,kk)))/size(sig,1);
-    text(kk-0.1,25,[num2str(round(this_sig,2)*100) '%'])
-end
-set(gca,'fontsize',12)
+%for kk=1:5
+%    this_sig = length(find(sig(:,kk)))/size(sig,1);
+%    text(kk-0.1,27,[num2str(round(this_sig,2)*100) '%'])
+%end
+set(gca,'fontsize',16)
 
-hleg = legend([p_sig,p_nonsig,nf],{'Significant','N.S','Noise Floor'})
-hleg.Position = [0.1810 0.1841 0.2839 0.1762];
+%hleg = legend([p_sig,p_nonsig,nf],{'Significant','N.S','Noise Floor'})
+%hleg.Position = [0.2044    0.2280    0.3013    0.1829];
+%hleg.Box = 'off';
+%hleg.FontSize = 12;
 
-ylabel('dB SPL')
+ylabel('Amplitude (dB SPL)')
 xlabel('Frequency bands (+/- .5 kHz)')
 set(gcf,'Position',[441 386 468 339])
-fig= gcf
-saveas(fig,'figs/teoae_overview','epsc')
 %% mean wave form
 close all
 figure('Renderer','painter')
-plot(squeeze(teoae_sub_resp(1,:,1)),teoae_sub_resp(:,:,3),'color',[0.5 0.5 0.5])
+%plot(squeeze(teoae_sub_resp(1,:,1)),teoae_sub_resp(:,:,3),'color',[0.5 0.5 0.5])
 hold on
 plot(squeeze(teoae_sub_resp(1,:,1)),nanmean(teoae_sub_resp(:,:,3),1),'k')
-set(gca,'fontsize',12)
+shadedErrorBar(squeeze(teoae_sub_resp(1,:,1)),nanmean(teoae_sub_resp(:,:,3),1),nanstd(teoae_sub_resp(:,:,3),1)/sqrt(size(teoae_sub_resp,1)))
+set(gca,'fontsize',16)
 set(gcf,'Position',[441 552 468 173])
 xlabel('Time [ms]')
 ylabel('mPA')
+xlim([4 12.5])
+box off
 %plot(squeeze(teoae_sub_resp(1,:,1)),teoae_sub_resp(:,:,2))
 fig= gcf
 saveas(fig,'figs/teoae_waveform','epsc')
@@ -586,7 +688,9 @@ save('uheal_data_clin.mat','uheal_data')
 
 %% functions
 function fig = plot_audiogram_groups(idx,age_sub,aud,aud_freq,cmap)
+    figure('renderer','painter')
 for s=1:length(idx)
+
             p1 = semilogx(aud_freq,aud(idx(s),:)','-','color',[cmap(age_sub(idx(s))-17,:) 0.8]);
             plot_aud_param(p1,aud_freq);
             hold on

@@ -4,8 +4,11 @@ cd(fileparts(matlab.desktop.editor.getActiveFilename))
 addpath('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools');
 addpath('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/cbrewer/cbrewer');
 plotting=0
-d = dir('*.mat');
+d = dir('UH*.mat');
 clin_dir = '/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped';
+% load UHEAL_data
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+CP_new = find(uheal_data.CP_new==0);
 % init
 delay = 1.1e-3%1.1e-3% Check this delay
 fs = 2^14;
@@ -66,7 +69,10 @@ for s=1:length(d)%[26,11,28,61]%
     nr_reject(s,:) = data_abr.nr_reject;
     
     cd(this_dir)
+
+
     %%
+    
     clc
     disp(['9 Hz: avg nr trials, ' num2str(floor(nanmean(n_trials(:,1)))) ,...
         ' +/- ' num2str(nanstd(n_trials(:,1)))])
@@ -199,7 +205,7 @@ end
 
 %% peak detect
 close all
-peakd=1;
+peakd=0;
 if peakd
         load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
     for s=1:length(d)%46:length(d)
@@ -220,9 +226,9 @@ if peakd
         else
             %[SP(s,:)]=getABRwaves(gcf,'SP');
             %[WIpos(s,:)]=getABRwaves(gcf,'Wave I pos');
-            [WIneg(kk,:)]=getABRwaves(gcf,'Wave I neg');
+            [WIneg(s,:)]=getABRwaves(gcf,'Wave I neg');
             %[WVpos(s,:)]=getABRwaves(gcf,'Wave V pos');
-            [WVneg(kk,:)]=getABRwaves(gcf,'Wave V neg');
+            [WVneg(s,:)]=getABRwaves(gcf,'Wave V neg');
         end
         
     end
@@ -235,16 +241,22 @@ if peakd
     cd ..
     %%
 else
-    load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
+    load('peaks/WVpos.mat');load('peaks/WIpos.mat');
+    load('peaks/SP.mat');load('peaks/WIneg.mat');load('peaks/WVneg.mat');
 end
-
+WVpos(111,:) = [];
+WIpos(111,:) = [];
+SP(111,:) = [];
+WIneg(111,:) = [];
+WVneg(111,:) = [];
 %% Try with pos and ned
 
-
+WIpos(:,2) = WIpos(:,2)-WIneg(:,2);
+WVpos(:,2) = WVpos(:,2)-WVneg(:,2);
 
 %%
 close all
-savefile = 1;
+savefile = 0;
 % latencies and amplitudes
 cm = cbrewer('qual','Set1',10)
 cmap = cm([1 2 10],:);
@@ -324,29 +336,32 @@ set(gca,'fontsize',12)
 set(gcf,'position',[441 324 867 401])
 if savefile
 fig=gcf;
-saveas(fig,"figs/abr_scatter3",'epsc')
+saveas(fig,"figs/abr_scatter4",'epsc')
 end
 
 %% save to UHEAL_Data file
 load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
-uheal_data.SP_amp = nan(size(uheal_data.subid));
-uheal_data.SP_lat = nan(size(uheal_data.subid));
-uheal_data.AP_amp = nan(size(uheal_data.subid));
-uheal_data.AP_lat =  nan(size(uheal_data.subid));
-uheal_data.WV_amp = nan(size(uheal_data.subid));
-uheal_data.WV_lat =  nan(size(uheal_data.subid));
+%uheal_data.SP_amp = nan(size(uheal_data.subid));
+%uheal_data.SP_lat = nan(size(uheal_data.subid));
+%uheal_data.AP_amp = nan(size(uheal_data.subid));
+uheal_data.AP_amp_pm = nan(size(uheal_data.subid));
+%uheal_data.AP_lat =  nan(size(uheal_data.subid));
+%uheal_data.WV_amp = nan(size(uheal_data.subid));
+uheal_data.WV_amp_pm = nan(size(uheal_data.subid));
+%uheal_data.WV_lat =  nan(size(uheal_data.subid));
 %%
 for s=1:length(SP)
     % get this subid
     thisID = str2double(sub_id{s}(3:5))
     this_idx = find(uheal_data.subid==thisID);
-    uheal_data.SP_amp(this_idx) = SP(s,2);
-    uheal_data.SP_lat(this_idx) = SP(s,1);
-    uheal_data.AP_amp(this_idx) = WIpos(s,2);
-    uheal_data.AP_lat(this_idx) = WIpos(s,1);
-    uheal_data.WV_amp(this_idx) = WVpos(s,2);
-    uheal_data.WV_lat(this_idx) = WVpos(s,1);
-    
+    %uheal_data.SP_amp(this_idx) = SP(s,2);
+    %uheal_data.SP_lat(this_idx) = SP(s,1);
+    %uheal_data.AP_amp(this_idx) = WIpos(s,2);
+    %uheal_data.AP_lat(this_idx) = WIpos(s,1);
+    %uheal_data.WV_amp(this_idx) = WVpos(s,2);
+    %uheal_data.WV_lat(this_idx) = WVpos(s,1);
+    uheal_data.AP_amp_pm(this_idx) = WIpos(s,2);
+    uheal_data.WV_amp_pm(this_idx) = WVpos(s,2);
 end
 
 uheal_table = struct2table(uheal_data)
@@ -364,7 +379,7 @@ lsline
 % ratio SP/AP
 figure
 spapratio = SP(:,2)./WIpos(:,2)
-idx = find(spapratio<1 & spapratio>0);
+idx = find(spapratio<10 & spapratio>0);
 scatter(age(idx),SP(idx,2)./WIpos(idx,2))
 lsline
 %lsline
@@ -377,10 +392,21 @@ close all
 figure('Renderer','painter')
 [fig1a,fig1b]=plot_abr(t_abr,sub_abr_b,age)
 %suptitle(['all, n=' num2str(length(find(~isnan(sub_abr(:,1,1)))))])
-
+%%
 % only NH
+% new CP
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+%%
+clear CP_new
+for s=1:length(sub_id)
+    this_sub = str2num(sub_id{s}(end-2:end))
+    CP_new(s) = uheal_data.CP_new(find(uheal_data.subid==this_sub));
+end
+%CP_new(110) = 1;
+%%
+save=0
 figure('Renderer','painter')
-sub_abr_NH = sub_abr_b(find(CP==0),:,:);
+sub_abr_NH = sub_abr_b(find(CP_new==0),:,:);
 [fig2a,fig2b]=plot_abr(t_abr,sub_abr_NH,age(CP==0))
 %suptitle(['NH, n=' num2str(length(find(~isnan(sub_abr_NH(:,1,1)))))])
 
@@ -420,6 +446,20 @@ saveas(fig2b,"figs/abr_YNH_h",'epsc')
 saveas(fig3b,"figs/abr_NH_h",'epsc')
 saveas(fig4b,"figs/abr_all_h",'epsc')    
 end
+
+
+%% age groups
+close all
+figure('Renderer','painter')
+%subplot(1,3,[1 2])
+sub_abr_MNH = sub_abr_b(find(CP_new==0 & age>25 & age<60),1,:);
+sub_abr_YNH = sub_abr_b(find(CP_new==0 & age<=25),1,:);
+sub_abr_ONH = sub_abr_b(find(CP_new==0 & age>60),1,:);
+sub_abr_group{1} = sub_abr_YNH;
+sub_abr_group{2} = sub_abr_MNH;
+sub_abr_group{3} = sub_abr_ONH;
+[fig5a]=plot_abr_group(t_abr,sub_abr_group)
+saveas(fig5a,"figs/abr_grouped",'epsc')
 %% Functions
 
 
@@ -428,6 +468,7 @@ function [fig1,fig2]=plot_abr(t_abr,sub_abr,age)
 cm = cbrewer('qual','Set1',10)
 cmap = cm([1 2 10],:);
 rate_colors = {'k','b'};
+%rate_colors = {cmap(1,:),cmap(2,:),cmap(3,:)};
 %subplot(1,3,[1 2])
 % loop over rates
 for kk=1:2
@@ -474,6 +515,57 @@ set(gcf,'position',[612 510 174 215])
 fig2=gcf;
 end
 
+function [fig1,fig2]=plot_abr_group(t_abr,sub_abr)
+cm = cbrewer('qual','Set1',10)
+cmap = cm([1 2 10],:);
+%rate_colors = {'k','b','r'};
+rate_colors = {cmap(3,:),cmap(2,:),cmap(1,:)};
+%subplot(1,3,[1 2])
+% loop over rates
+for kk=1:3
+    
+    abr_var=squeeze(nanstd(sub_abr{kk}))/sqrt(length(find(~isnan(sub_abr{kk}(:,1,1)))));
+    abr_mean = squeeze(nanmean(sub_abr{kk}(:,1,:)))';
+    p(kk)=plot(t_abr,abr_mean,'color',rate_colors{kk});
+    shadedErrorBar(t_abr,abr_mean,abr_var,...
+    'lineprops',{'color',rate_colors{kk}},'transparent',1);
+    hold on
+end
+        xlim([-.5e-3 8e-3])%changed from 6e-3 to 8e-3
+        ylim([-.2 .4])
+        hold on
+        box off
+        grid on
+        
+        
+ plot(t_abr,zeros(size(t_abr)),'k--');
+   
+
+hleg = legend([p(1) p(2) p(3)],'Young','Middle-aged','Older');
+hleg.Box = 'off';
+hleg.Position = [0.3869 0.6910 0.4444 0.2744];
+
+set(gca,'fontsize',12,'xtick',[0:1:8]*1e-3)
+%set(gca,'TickLabelInterpreter','latex');
+ylabel('ABR Amplitude [\muV]');
+xlabel('Time [s]')  
+set(gcf,'position',[293 510 315 215])
+fig1=gcf;
+%axis tight
+% figure
+% %subplot(1,3,3)
+% hist(age,100)
+% xlim([0 99])
+% ylim([0 8])
+% xlabel('Age')
+% ylabel('n')
+% set(gca,'YAxisLocation','left','fontsize',12,'xtick',[25,50,75])
+% set(gcf,'position',[612 510 174 215])
+%  box off
+ %set(gca,'TickLabelInterpreter','latex');
+
+%fig2=gcf;
+end
 % get peaks
 function [output] = getABRwaves(fig,titstring)
 %fig = figure;

@@ -6,6 +6,9 @@ addpath('/work1/jonmarc/UHEAL_master/UHEAL/_scripts/_tools/cbrewer/cbrewer');
 plotting=0
 d = dir('*.mat');
 clin_dir = '/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped';
+% load UHEAL_data
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
+CP_new = find(uheal_data.CP_new==0);
 % init
 delay = 1.1e-3%1.1e-3% Check this delay
 fs = 2^14;
@@ -66,7 +69,10 @@ for s=1:length(d)%[26,11,28,61]%
     nr_reject(s,:) = data_abr.nr_reject;
     
     cd(this_dir)
+
+
     %%
+    
     clc
     disp(['9 Hz: avg nr trials, ' num2str(floor(nanmean(n_trials(:,1)))) ,...
         ' +/- ' num2str(nanstd(n_trials(:,1)))])
@@ -199,7 +205,7 @@ end
 
 %% peak detect
 close all
-peakd=1;
+peakd=0;
 if peakd
         load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
     for s=1:length(d)%46:length(d)
@@ -220,9 +226,9 @@ if peakd
         else
             %[SP(s,:)]=getABRwaves(gcf,'SP');
             %[WIpos(s,:)]=getABRwaves(gcf,'Wave I pos');
-            [WIneg(kk,:)]=getABRwaves(gcf,'Wave I neg');
+            [WIneg(s,:)]=getABRwaves(gcf,'Wave I neg');
             %[WVpos(s,:)]=getABRwaves(gcf,'Wave V pos');
-            [WVneg(kk,:)]=getABRwaves(gcf,'Wave V neg');
+            [WVneg(s,:)]=getABRwaves(gcf,'Wave V neg');
         end
         
     end
@@ -240,11 +246,12 @@ end
 
 %% Try with pos and ned
 
-
+WIpos(:,2) = WIpos(:,2)-WIneg(:,2);
+WVpos(:,2) = WVpos(:,2)-WVneg(:,2);
 
 %%
 close all
-savefile = 1;
+savefile = 0;
 % latencies and amplitudes
 cm = cbrewer('qual','Set1',10)
 cmap = cm([1 2 10],:);
@@ -324,29 +331,32 @@ set(gca,'fontsize',12)
 set(gcf,'position',[441 324 867 401])
 if savefile
 fig=gcf;
-saveas(fig,"figs/abr_scatter3",'epsc')
+saveas(fig,"figs/abr_scatter4",'epsc')
 end
 
 %% save to UHEAL_Data file
 load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat')
-uheal_data.SP_amp = nan(size(uheal_data.subid));
-uheal_data.SP_lat = nan(size(uheal_data.subid));
-uheal_data.AP_amp = nan(size(uheal_data.subid));
-uheal_data.AP_lat =  nan(size(uheal_data.subid));
-uheal_data.WV_amp = nan(size(uheal_data.subid));
-uheal_data.WV_lat =  nan(size(uheal_data.subid));
+%uheal_data.SP_amp = nan(size(uheal_data.subid));
+%uheal_data.SP_lat = nan(size(uheal_data.subid));
+%uheal_data.AP_amp = nan(size(uheal_data.subid));
+uheal_data.AP_amp_pm = nan(size(uheal_data.subid));
+%uheal_data.AP_lat =  nan(size(uheal_data.subid));
+%uheal_data.WV_amp = nan(size(uheal_data.subid));
+uheal_data.WV_amp_pm = nan(size(uheal_data.subid));
+%uheal_data.WV_lat =  nan(size(uheal_data.subid));
 %%
 for s=1:length(SP)
     % get this subid
     thisID = str2double(sub_id{s}(3:5))
     this_idx = find(uheal_data.subid==thisID);
-    uheal_data.SP_amp(this_idx) = SP(s,2);
-    uheal_data.SP_lat(this_idx) = SP(s,1);
-    uheal_data.AP_amp(this_idx) = WIpos(s,2);
-    uheal_data.AP_lat(this_idx) = WIpos(s,1);
-    uheal_data.WV_amp(this_idx) = WVpos(s,2);
-    uheal_data.WV_lat(this_idx) = WVpos(s,1);
-    
+    %uheal_data.SP_amp(this_idx) = SP(s,2);
+    %uheal_data.SP_lat(this_idx) = SP(s,1);
+    %uheal_data.AP_amp(this_idx) = WIpos(s,2);
+    %uheal_data.AP_lat(this_idx) = WIpos(s,1);
+    %uheal_data.WV_amp(this_idx) = WVpos(s,2);
+    %uheal_data.WV_lat(this_idx) = WVpos(s,1);
+    uheal_data.AP_amp_pm(this_idx) = WIpos(s,2);
+    uheal_data.WV_amp_pm(this_idx) = WVpos(s,2);
 end
 
 uheal_table = struct2table(uheal_data)
@@ -364,7 +374,7 @@ lsline
 % ratio SP/AP
 figure
 spapratio = SP(:,2)./WIpos(:,2)
-idx = find(spapratio<1 & spapratio>0);
+idx = find(spapratio<10 & spapratio>0);
 scatter(age(idx),SP(idx,2)./WIpos(idx,2))
 lsline
 %lsline
