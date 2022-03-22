@@ -64,7 +64,7 @@ if ~isempty(bdf) %|| strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %n
         %%
         
         cfgres = [];
-        cfgres.resamplefs = 4096*2;
+        cfgres.resamplefs = 4096;
         cfgres.detrend    = 'no';
         data = ft_resampledata(cfgres,data_int);
         %Rereferencing (l/r mastoid)
@@ -72,22 +72,22 @@ if ~isempty(bdf) %|| strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %n
         cfg.dataset = dataset;
         cfg.channel     = {'eeg','EXG1','EXG2' '-Status'};%chaoi;;%chaoi;
         cfg.reref       = 'yes';
-        % if stimear ==1
-        %     cfg.refchannel  = {'EXG1'}; %vertex electrodes%linked mastoids
-        % else
-        %     cfg.refchannel  = {'EXG2'};
-        % end
+         %if stimear ==1
+         %    cfg.refchannel  = {'EXG1'}; %vertex electrodes%linked mastoids
+         %else
+         %    cfg.refchannel  = {'EXG2'};
+         %end
         if stimear ==1
-            cfg.refchannel  = {'EXG1','EXG2'}; %vertex electrodes%linked mastoids
+            cfg.refchannel  = {'P9','P10'}; %vertex electrodes%linked mastoids
         else
-            cfg.refchannel  = {'EXG2','EXG1'};
+            cfg.refchannel  = {'P9','P10'};
         end
         
-        if dd == 2 % UH02 wrong recording labels
-            
-            cfg.channel     = {'A1','A2','A3','A4','A5','A6','A7','A8','A9','A10',...
-                'A11' 'A12' 'A13' 'A14' 'A15' 'A16','EXG1','EXG2' '-Status'};
-        end
+        %if dd == 2 % UH02 wrong recording labels
+        %    
+        %    cfg.channel     = {'A1','A2','A3','A4','A5','A6','A7','A8','A9','A10',...
+        %        'A11' 'A12' 'A13' 'A14' 'A15' 'A16','EXG1','EXG2' '-Status'};
+        %end
         cfg.layout      =  'biosemi64.lay';
         cfg.continuous  = 'yes';
         cfg.dftfilter   = 'yes';
@@ -103,10 +103,10 @@ if ~isempty(bdf) %|| strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %n
         
         % rereferenced data struct
         data = ft_preprocessing(cfg,data);
-        if dd==2
-            data.label = {'Fp1','F3','AFz','Fz','P9','T7','C3','FC3','C4','Cz',...
-                'P10','FCz','T8','F4','Fp2','FC4','EXG1','EXG2'};
-        end
+%         if dd==2
+%             data.label = {'Fp1','F3','AFz','Fz','P9','T7','C3','FC3','C4','Cz',...
+%                 'P10','FCz','T8','F4','Fp2','FC4','EXG1','EXG2'};
+%         end
         %
         %     cfgd          = [];
         %     cfgd.method   = 'channel';
@@ -122,7 +122,7 @@ if ~isempty(bdf) %|| strcmp(d(dd).name,'UH091') || strcmp(d(dd).name,'UH067') %n
         
         cd(datadir)
         cd ..
-        cd(['_EEG' filesep '_preprocdata_AEP' filesep 'EFR'])
+        cd(['_EEG' filesep '_preprocdata_AEP' filesep 'EFR' filesep 'mastoid'])
         %%  Save mat
         %if ~exist(d(dd).name, 'dir')
         %     mkdir(d(dd).name)

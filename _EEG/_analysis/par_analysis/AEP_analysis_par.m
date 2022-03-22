@@ -180,7 +180,7 @@ try
     
     
     cd(rootdir)
-    cd('_EEG/_derivatives/_AEP_results')
+    cd('_EEG/_derivatives/_AEP_results/')
     %cd(subdir(s).name)
     savefile = [subdir(s).name(1:5) '_AEP_processed.mat'];
     

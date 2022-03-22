@@ -11,6 +11,8 @@ cd(thisdir)
 
 thisdir = cd;
 subs = dir('UH*');
+load('/work1/jonmarc/UHEAL_master/UHEAL/UHEAL_data/scraped/uheal_data_table/uheal_data.mat');
+
 %% get data
 for s=1:length(subs)
     
@@ -51,7 +53,8 @@ for s=1:length(subs)
         else
             lab(s) = nan;
         end
-        CP(s) =  data_efr.subinfo.CP;
+        %CP(s) =  data_efr.subinfo.CP;
+        CP(s) = uheal_data.CP_new(find(uheal_data.subid==sub_num(s)));
         HV(s) = data_efr.subinfo.HV;
         rjt_trials{s} = data_efr.rjt_trials;
         nr_reject(s) =data_efr.nr_reject;

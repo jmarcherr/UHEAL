@@ -144,7 +144,7 @@ sub_abr_b(s,:,:) = squeeze(sub_abr(s,:,:));%;-baseline(:,s)');
 end
 savefile = 'midlate_all'
 fig = gcf;
-set(gcf,'position',[681 859 313 165])
+%set(gcf,'position',[681 859 313 165])
 %saveas(fig,savefile,'epsc')
 
 %% mean over NH
@@ -171,7 +171,7 @@ mlr_filt = filtfilt(filt_def,squeeze(mean(sub_abr(NH_idx,:,:),2))');
 
 % individual traces
 %for ff=4
-    filt_coef = [10 1000/ff];
+    filt_coef = [10 1000];
     filt_def = designfilt('bandpassfir','FilterOrder',40, ...
         'CutoffFrequency1',filt_coef(1),'CutoffFrequency2',filt_coef(2), ...
         'SampleRate',fs);
@@ -189,11 +189,11 @@ ylabel('amplitude \muV')
 xlabel('time ms')
 
 %end
-set(gcf,'position',[681 642 313 360])
+%set(gcf,'position',[681 642 313 360])
 savefile = 'figs/midlate_ind'
 fig = gcf;
 %set(gcf,'position',[681 859 313 165])
-saveas(fig,savefile,'epsc')
+%saveas(fig,savefile,'epsc')
 %%
 %% visual rejection: Find artifact subjects
 for s=1:length(d)
@@ -218,187 +218,73 @@ for s=1:length(d)
         rjt_sub(s) = 0;
     end
     %pause()
-    %savefile = [sub_id{s}];
-    %saveas(fig,['subject_ABRs' filesep savefile],'epsc')
+    savefile = [sub_id{s}];
+    saveas(fig,['subject_MLRs' filesep savefile],'epsc')
     
 
 end
-
-% save rjt_sub
-%% peak detect
+%%
+cd('subject_MLRs')
+save rjt_sub
+cd ..
+%% peak detect (manual)
 close all
-for s=1:length(d)%46:length(d)
+for s=96:length(d)%
     
-    plot(t_abr,squeeze(sub_abr_b(s,2,:))','color',[0.5 0.5 0.1])
+    plot(t_abr,squeeze(sub_abr(s,2,:))','color',[0.5 0.5 0.1])
     hold on
-    plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
-    xlim([-2e-3 8e-3])
+    %plot(t_abr,squeeze(sub_abr_b(s,1,:))','b')
+    plot(t_abr,mean(mlr_filt'),'linewidth',2) % mean wave-form
+    xlabel('Time [s]')
+    ylabel('Amplitude [\muV]')
+    xlim([-10e-3 110e-3])
     title(['subid: ' sub_id{s}])
     grid on
     hold off
     if isnan(sub_abr(s,1,1))
-        SP(s,:) = [nan nan];
-        WIpos(s,:) = [nan nan];
-        WVpos(s,:) = [nan nan];
+        N0(s,:) = [nan nan];
+        P0(s,:) = [nan nan];
+        Na(s,:) = [nan nan];
+        Pa(s,:) = [nan nan];
     else
-         [SP(s,:)]=getABRwaves(gcf,'SP');
-         [WIpos(s,:)]=getABRwaves(gcf,'Wave I pos');
-         %[WIneg(kk,:)]=getABRwaves(gcf,'Wave I neg');
-         [WVpos(s,:)]=getABRwaves(gcf,'Wave V pos');
-         %[WVneg(kk,:)]=getABRwaves(gcf,'Wave V neg');
+         [N0(s,:)]=getABRwaves(gcf,'N0');
+         [P0(s,:)]=getABRwaves(gcf,'P0');
+         [Na(s,:)]=getABRwaves(gcf,'Na');
+         [Pa(s,:)]=getABRwaves(gcf,'Pa');
+
     end
 
 end
 
-%%
-close all
-savefile = 1;
-% latencies and amplitudes
-cm = cbrewer('qual','Set1',10)
-cmap = cm([1 2 10],:);
-
-%load('peaks/WVpos.mat');load('peaks/WIpos.mat');load('peaks/SP.mat');
-NH_idx = find(CP==0);NH_idx(end)=[];
-NH_idx = setdiff(NH_idx,[rjt_sub,missing_abr]);
-figure
-subplot(1,3,1)
-splot(1)=scatter(SP(NH_idx,1),SP(NH_idx,2),'o',...
-    'MarkerEdgeColor','k','markerfacecolor',[cmap(1,:)],'MarkerFaceAlpha',.5)
-hold on
-splot(2)=scatter(WIpos(NH_idx,1),WIpos(NH_idx,2),'o'...
-    ,'MarkerEdgeColor','k','markerfacecolor',cmap(2,:),'MarkerFaceAlpha',.5)
-hold on
-splot(3)=scatter(WVpos(NH_idx,1),WVpos(NH_idx,2),'o'...
-    ,'MarkerEdgeColor','k','markerfacecolor',cmap(3,:),'MarkerFaceAlpha',.5)
-
-ylabel('Amplitude [\muV]');
-xlabel('Time [s]')     
-xlim([-1e-3 10e-3])
-hleg = legend([splot(1) splot(2) splot(3)],'SP','WI','WV');
-hleg.Position = [0.2831 0.7789 0.0877 0.1471];
-%hleg.Box = 'off';
-
-set(gca,'fontsize',12,'xtick',[0:1:10]*1e-3)
-%set(gca,'TickLabelInterpreter','latex');
-
-%latencies
-subplot(1,3,2)
-scatter(age(NH_idx),SP(NH_idx,1),'o',...
-        'MarkerEdgeColor','k','markerfacecolor',cmap(1,:),'MarkerFaceAlpha',.5)
-hold on
-scatter(age(NH_idx),WIpos(NH_idx,1),'o',...
-        'MarkerEdgeColor','k','markerfacecolor',cmap(2,:),'MarkerFaceAlpha',.5)
-scatter(age(NH_idx),WVpos(NH_idx,1),'o',...
-        'MarkerEdgeColor','k','markerfacecolor',cmap(3,:),'MarkerFaceAlpha',.5)
-    
-ll=lsline
-idx = [3,2,1]
-for ii=1:3
-set(ll(ii),'color',cmap(idx(ii),:),'Linewidth',2)
-end
-
-ylabel('Latency [s]');
-xlabel('Age')     
-xlim([0 100])
-set(gca,'fontsize',12)
-%set(gca,'TickLabelInterpreter','latex');
-
-
-% amplitudes
-subplot(1,3,3)
-scatter(age(NH_idx),SP(NH_idx,2),'o',...
-    'MarkerEdgeColor','k','markerfacecolor',cmap(1,:),'MarkerFaceAlpha',.5)
-hold on
-scatter(age(NH_idx),WIpos(NH_idx,2),'o',...
-    'MarkerEdgeColor','k','markerfacecolor',cmap(2,:),'MarkerFaceAlpha',.5)
-scatter(age(NH_idx),WVpos(NH_idx,2),'o',...
-    'MarkerEdgeColor','k','markerfacecolor',cmap(3,:),'MarkerFaceAlpha',.5)
-
-ll=lsline
-idx = [3,2,1]
-for ii=1:3
-set(ll(ii),'color',cmap(idx(ii),:),'Linewidth',2)
-end
-
-ylabel('Amplitude [\muV]');
-xlabel('Age')     
-xlim([0 100])
-set(gca,'fontsize',12)
-%set(gca,'TickLabelInterpreter','latex');
-
-
-% save
-
-set(gcf,'position',[441 324 867 401])
-if savefile
-fig=gcf;
-saveas(fig,"figs/abr_scatter2",'epsc')
-end
-%%
-%ratios WI/WV
-close all
-IVratio = WVpos(NH_idx,2)./WIpos(NH_idx,2);
-idx = find(IVratio<5 & IVratio>-3);
-figure
-scatter(age(idx),IVratio(idx))
-lsline
-% ratio SP/AP
-figure
-scatter(age,SP(:,2)./WIpos(:,2))
-lsline
-%lsline
-%ylim([-1 1])
-         
-%% plot average with errorbars
-save = 0;
-close all
-% all subjects
-figure
-[fig1a,fig1b]=plot_abr(t_abr,sub_abr_b,age)
-%suptitle(['all, n=' num2str(length(find(~isnan(sub_abr(:,1,1)))))])
-
-% only NH
-figure
-sub_abr_NH = sub_abr_b(find(CP==0),:,:);
-[fig2a,fig2b]=plot_abr(t_abr,sub_abr_NH,age(CP==0))
-%suptitle(['NH, n=' num2str(length(find(~isnan(sub_abr_NH(:,1,1)))))])
-
-
-% only NH young
-figure
-sub_abr_YNH = sub_abr_b(find(CP==0 & age<25),:,:);
-[fig3a,fig3b]=plot_abr(t_abr,sub_abr_YNH,age(find(CP==0 & age<25)))
-%suptitle(['YNH, n=' num2str(length(find(~isnan(sub_abr_YNH(:,1,1)))))])
-
-% only NH old
-figure
-%subplot(1,3,[1 2])
-sub_abr_ONH = sub_abr_b(find(CP==0 & age>45),:,:);
-[fig4a,fig4b]=plot_abr(t_abr,sub_abr_ONH,age(find(CP==0 & age>45)))
-%suptitle(['ONH, n=' num2str(length(find(~isnan(sub_abr_ONH(:,1,1)))))])
-
-
-
-% only HI
-% figure
-% sub_abr_HI = sub_abr(find(CP==1),:,:);
-% plot_abr(t_abr,sub_abr_HI)
-% title(['HI, n=' num2str(length(find(~isnan(sub_abr_HI(:,1,1)))))])
-
-
-
+%% 
+save =0;
 if save
-    %waveforms
-saveas(fig1a,"figs/abr_ONH",'epsc')
-saveas(fig2a,"figs/abr_YNH",'epsc')
-saveas(fig3a,"figs/abr_NH",'epsc')
-saveas(fig4a,"figs/abr_all",'epsc')
-    %hist
-saveas(fig1b,"figs/abr_ONH_h",'epsc')
-saveas(fig2b,"figs/abr_YNH_h",'epsc')
-saveas(fig3b,"figs/abr_NH_h",'epsc')
-saveas(fig4b,"figs/abr_all_h",'epsc')    
+    cd('peaks')
+    save N0
+    save P0
+    save Na
+    save Pa
+    cd ..
 end
+
+%% plotting
+load('peaks/N0');load('peaks/P0');load('peaks/Na');load('peaks/Pa')
+close all
+figure('renderer','painter')
+scatter(N0(:,1),N0(:,2))
+hold on
+scatter(P0(:,1),P0(:,2))
+scatter(Na(:,1),Na(:,2))
+scatter(Pa(:,1),Pa(:,2))
+plot(t_abr,mean(mlr_filt'),'linewidth',2) % mean wave-form
+legend('N0','P0','Na','Pa','Mean MLR')
+xlabel('time (s)')
+ylabel('amplitude \muV')
+set(gcf,'position',[441 279 473 423]);
+fig = gcf;
+    savefile = 'peak_picking';
+    saveas(fig,['figs' filesep savefile],'epsc')
+
 %% Functions
 
 

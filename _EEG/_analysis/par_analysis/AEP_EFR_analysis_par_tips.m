@@ -20,7 +20,7 @@ try
     
     % go to EEG folder
     cd(rootdir)
-    cd('_EEG/_preprocdata_AEP/EFR')
+    cd('_EEG/_preprocdata_AEP/EFR/mastoid') %obs
     % load preprocessed data
     load([subdir(s).name])
     cd(rootdir)
